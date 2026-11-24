@@ -1,0 +1,13 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "stock-ai"
+version = "0.1.0"
+description = "基于东方财富的单只股票/ETF 行情查询接口"
+requires-python = ">=3.9"
+dependencies = []
+
+[tool.setuptools]
+packages = ["stock_ai"]
