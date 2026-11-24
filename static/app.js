@@ -210,7 +210,7 @@
 
   const state = {
     code: "", name: "", period: "day",
-    gridSettings: null, gridResult: null,
+    gridSettings: null, gridResult: null, deleteTarget: null,
   };
   const byId = function (id) { return document.getElementById(id); };
   let chart = null;
@@ -523,6 +523,32 @@
     }
   }
 
+  function closeSymbolMenus() {
+    document.querySelectorAll(".symbol-menu").forEach(function (node) {
+      node.classList.remove("open");
+    });
+  }
+
+  function selectSymbol(symbol, row) {
+    state.code = symbol.code;
+    state.name = symbol.name;
+    loadSavedGridSettings(symbol.code);
+    const range = queryRange(symbol);
+    if (range[0]) byId("startDate").value = range[0];
+    if (range[1]) byId("endDate").value = range[1];
+    document.querySelectorAll(".symbol-row").forEach(function (node) {
+      node.classList.toggle("active", node === row);
+    });
+    loadPeriod("day");
+  }
+
+  function openDeleteDialog(symbol) {
+    state.deleteTarget = symbol;
+    byId("deleteMessage").textContent = "确认删除 " + symbol.code +
+      " (" + symbol.name + ") 的本地缓存吗？";
+    byId("deleteDialog").hidden = false;
+  }
+
   function renderMenu(groups) {
     const menu = byId("menu");
     menu.innerHTML = "";
@@ -535,6 +561,10 @@
       section.appendChild(heading);
 
       group.symbols.forEach(function (symbol) {
+        const row = document.createElement("div");
+        row.className = "symbol-row";
+        row.dataset.code = symbol.code;
+
         const button = document.createElement("button");
         button.className = "symbol";
         button.type = "button";
@@ -548,18 +578,39 @@
         button.appendChild(code);
         button.appendChild(name);
         button.addEventListener("click", function () {
-          state.code = symbol.code;
-          state.name = symbol.name;
-          loadSavedGridSettings(symbol.code);
-          const range = queryRange(symbol);
-          if (range[0]) byId("startDate").value = range[0];
-          if (range[1]) byId("endDate").value = range[1];
-          document.querySelectorAll(".symbol").forEach(function (node) {
-            node.classList.toggle("active", node === button);
-          });
-          loadPeriod("day");
+          closeSymbolMenus();
+          selectSymbol(symbol, row);
         });
-        section.appendChild(button);
+
+        const more = document.createElement("button");
+        more.className = "symbol-more";
+        more.type = "button";
+        more.textContent = "⋯";
+        more.title = "更多操作";
+        more.addEventListener("click", function (event) {
+          event.stopPropagation();
+          const menuNode = row.querySelector(".symbol-menu");
+          const willOpen = !menuNode.classList.contains("open");
+          closeSymbolMenus();
+          menuNode.classList.toggle("open", willOpen);
+        });
+
+        const menuNode = document.createElement("div");
+        menuNode.className = "symbol-menu";
+        const deleteButton = document.createElement("button");
+        deleteButton.type = "button";
+        deleteButton.textContent = "删除";
+        deleteButton.addEventListener("click", function (event) {
+          event.stopPropagation();
+          closeSymbolMenus();
+          openDeleteDialog(symbol);
+        });
+        menuNode.appendChild(deleteButton);
+
+        row.appendChild(button);
+        row.appendChild(more);
+        row.appendChild(menuNode);
+        section.appendChild(row);
       });
       menu.appendChild(section);
     });
@@ -767,6 +818,32 @@
     }
   }
 
+  async function confirmDeleteSymbol() {
+    const target = state.deleteTarget;
+    if (!target) return;
+    try {
+      await postJson("/api/symbols/delete", { code: target.code });
+      byId("deleteDialog").hidden = true;
+      if (state.code === target.code) {
+        state.code = "";
+        state.name = "";
+        state.gridSettings = null;
+        state.gridResult = null;
+        byId("title").textContent = "请选择标的";
+        byId("meta").textContent = "";
+        byId("thead").innerHTML = "";
+        byId("tbody").innerHTML = "";
+        byId("gridContent").textContent = "无模拟交易记录";
+        if (chart) chart.clear();
+      }
+      state.deleteTarget = null;
+      renderMenu(await fetchJson("/api/symbols"));
+      setStatus("已删除 " + target.code);
+    } catch (error) {
+      setStatus(error.message, true);
+    }
+  }
+
   async function init() {
     const end = new Date();
     const start = new Date();
@@ -780,6 +857,17 @@
       byId("addDialog").hidden = true;
     });
     byId("addForm").addEventListener("submit", submitAddSymbol);
+    byId("deleteConfirm").addEventListener("click", confirmDeleteSymbol);
+    byId("deleteCancel").addEventListener("click", function () {
+      byId("deleteDialog").hidden = true;
+      state.deleteTarget = null;
+    });
+    document.addEventListener("click", function (event) {
+      if (!event.target.closest(".symbol-more") &&
+          !event.target.closest(".symbol-menu")) {
+        closeSymbolMenus();
+      }
+    });
     byId("gridSettingsBtn").addEventListener("click", openGridDialog);
     byId("gridCancel").addEventListener("click", function () {
       byId("gridDialog").hidden = true;

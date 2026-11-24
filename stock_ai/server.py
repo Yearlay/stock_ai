@@ -169,7 +169,7 @@ class StockHandler(BaseHTTPRequestHandler):
 
     def do_POST(self):
         parsed = urlparse(self.path)
-        if parsed.path != "/api/grid/settings":
+        if parsed.path not in ("/api/grid/settings", "/api/symbols/delete"):
             self._send_json(404, {"error": "未找到接口", "path": parsed.path})
             return
         try:
@@ -179,6 +179,11 @@ class StockHandler(BaseHTTPRequestHandler):
             self._send_json(400, {"error": f"请求体不是合法 JSON: {exc}"})
             return
         try:
+            if parsed.path == "/api/symbols/delete":
+                code = str(payload.get("code") or "").strip()
+                cache.delete_cache(code)
+                self._send_json(200, {"code": code, "deleted": True})
+                return
             self._send_json(200, grid.save_settings(payload))
         except ValueError as exc:
             self._send_json(400, {"error": str(exc)})

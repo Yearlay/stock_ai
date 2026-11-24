@@ -256,6 +256,16 @@ def set_value(code: str, key: str, value) -> None:
     _write(path, obj)
 
 
+def delete_cache(code: str) -> None:
+    code = str(code).strip()
+    if not re.fullmatch(r"\d{6}", code):
+        raise ValueError(f"股票代码必须为 6 位数字: {code!r}")
+    try:
+        cache_path(code).unlink()
+    except FileNotFoundError:
+        pass
+
+
 def write_quote(code: str, quote: dict) -> None:
     path = cache_path(code)
     obj = _load(path) or {}

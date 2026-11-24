@@ -137,6 +137,15 @@ class ServerTest(unittest.TestCase):
             "510300", "20261102", "50", "50", "10", "10", "1", "10"
         )
 
+    def test_delete_symbol_endpoint(self):
+        with patch("stock_ai.server.cache.delete_cache") as delete:
+            status, body = self.request_post(
+                "/api/symbols/delete", {"code": "512480"}
+            )
+        self.assertEqual(status, 200)
+        self.assertEqual(body, {"code": "512480", "deleted": True})
+        delete.assert_called_once_with("512480")
+
     def test_grid_settings_post_and_get(self):
         settings = {
             "code": "510300", "start": "2025-11-24", "base_shares": 1000,

@@ -148,6 +148,14 @@ class CacheReadTest(unittest.TestCase):
         self.path.write_text("{broken", encoding="utf-8")
         self.assertIsNone(cache.read_history("510300", "20251101", "20251124", 101, 1))
 
+    def test_delete_cache(self):
+        self.write_records()
+        self.assertTrue(self.path.exists())
+        cache.delete_cache("510300")
+        self.assertFalse(self.path.exists())
+        with self.assertRaises(ValueError):
+            cache.delete_cache("abc")
+
     def test_write_query_range(self):
         self.write_records()
         cache.write_query_range("510300", "20251124", "20261124")

@@ -9,7 +9,7 @@
 <body>
   <div class="app">
     <aside class="sidebar">
-      <div class="brand">stock_ai</div>
+      <div class="brand">我的自选</div>
       <nav id="menu" class="menu"></nav>
       <button id="addSymbolBtn" class="add-symbol">+添加</button>
     </aside>
@@ -97,6 +97,17 @@
           <button type="button" id="addCancel">取消</button>
         </div>
       </form>
+    </div>
+  </div>
+
+  <div id="deleteDialog" class="dialog-overlay" hidden>
+    <div class="dialog">
+      <h2>删除标的</h2>
+      <p id="deleteMessage">确认删除该标的的本地缓存吗？</p>
+      <div class="dialog-actions">
+        <button type="button" id="deleteConfirm" class="danger">确认</button>
+        <button type="button" id="deleteCancel">取消</button>
+      </div>
     </div>
   </div>
 
