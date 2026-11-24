@@ -4,6 +4,7 @@ from __future__ import annotations
 
 import argparse
 import json
+from datetime import date
 from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 from pathlib import Path
 from urllib.parse import parse_qs, urlparse
@@ -40,6 +41,17 @@ def list_symbols() -> list:
     return groups
 
 
+def _year_ago(end_text: str) -> str:
+    try:
+        end = date.fromisoformat(end_text[:10])
+    except ValueError:
+        end = date.today()
+    try:
+        return end.replace(year=end.year - 1).isoformat()
+    except ValueError:
+        return end.replace(year=end.year - 1, day=28).isoformat()
+
+
 class StockHandler(BaseHTTPRequestHandler):
     server_version = "StockAI/0.1"
 
@@ -60,6 +72,22 @@ class StockHandler(BaseHTTPRequestHandler):
                 return
             if parsed.path == "/health":
                 self._send_json(200, {"status": "ok"})
+                return
+            if parsed.path == "/api/symbols/add":
+                code = self._require(query, "code")
+                end_text = query.get("end") or date.today().isoformat()
+                start_text = query.get("start") or _year_ago(end_text)
+                info = eastmoney.get_stock_data(code)
+                history = eastmoney.get_history(
+                    code, start_text, end_text, force=True, save_range=True
+                )
+                self._send_json(200, {
+                    "code": code,
+                    "info": info,
+                    "history_count": history["count"],
+                    "start": start_text,
+                    "end": end_text,
+                })
                 return
             if parsed.path == "/api/symbols":
                 self._send_json(200, list_symbols())

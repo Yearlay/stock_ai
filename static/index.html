@@ -11,6 +11,7 @@
     <aside class="sidebar">
       <div class="brand">stock_ai</div>
       <nav id="menu" class="menu"></nav>
+      <button id="addSymbolBtn" class="add-symbol">+添加</button>
     </aside>
 
     <main class="main">
@@ -80,6 +81,20 @@
         <div class="dialog-actions">
           <button type="submit" class="primary">保存</button>
           <button type="button" id="gridCancel">取消</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <div id="addDialog" class="dialog-overlay" hidden>
+    <div class="dialog">
+      <h2>添加标的</h2>
+      <form id="addForm">
+        <label>标的代码 <input id="addCode" type="text" placeholder="例如 512480" required></label>
+        <p id="addError" class="dialog-error"></p>
+        <div class="dialog-actions">
+          <button type="submit" class="primary">确认</button>
+          <button type="button" id="addCancel">取消</button>
         </div>
       </form>
     </div>

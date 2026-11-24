@@ -33,6 +33,10 @@ assert.equal(
 );
 assert.equal(ui.queryRange({}).join(","), ",");
 assert.equal(
+  ui.addSymbolUrl("512480", "20251124", "20261124"),
+  "/api/symbols/add?code=512480&start=20251124&end=20261124"
+);
+assert.equal(
   ui.gridUrl({ code: "510300", start: "2026-11-02", base_shares: 50,
     grid_shares: 50, up_pct: 1, down_pct: 2, fee: 5, base_price: 4.1 }),
   "/api/grid/simulate?code=510300&start=2026-11-02&base_shares=50" +
@@ -86,6 +90,16 @@ assert.equal(layout.mainHeight.toFixed(1), "280.5");
 assert.equal(layout.volumeHeight.toFixed(1), "93.5");
 assert.equal(layout.volumeTop.toFixed(1), (28 + 280.5 + 24).toFixed(1));
 assert.equal(layout.gap, 24);
+
+const candles = [
+  [1, 2, 0.5, 3],
+  [3, 4, 2, 5],
+  [5, 6, 4, 7],
+];
+assert.equal(ui.visibleRange(candles, 0, 100).high, 7);
+assert.equal(ui.visibleRange(candles, 0, 100).low, 0.5);
+assert.equal(ui.visibleRange(candles, 50, 100).high, 7);
+assert.equal(ui.visibleRange(candles, 50, 100).low, 2);
 
 const zoomAll = ui.chartZoom(700, 330);
 assert.equal(zoomAll.start.toFixed(3), "52.857");

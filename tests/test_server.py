@@ -108,6 +108,22 @@ class ServerTest(unittest.TestCase):
             "510300", "20251124", "20261124", 101, 1, save_range=True
         )
 
+    def test_add_symbol_endpoint(self):
+        info = {"code": "512480", "name": "半导体ETF", "source": "eastmoney"}
+        history = {"code": "512480", "count": 240, "records": []}
+        with patch("stock_ai.server.eastmoney.get_stock_data", return_value=info) as get_data, \
+                patch("stock_ai.server.eastmoney.get_history", return_value=history) as get_history:
+            status, body = self.request(
+                "/api/symbols/add?code=512480&start=20251124&end=20261124"
+            )
+        self.assertEqual(status, 200)
+        self.assertEqual(body["info"], info)
+        self.assertEqual(body["history_count"], 240)
+        get_data.assert_called_once_with("512480")
+        get_history.assert_called_once_with(
+            "512480", "20251124", "20261124", force=True, save_range=True
+        )
+
     def test_grid_simulate_endpoint(self):
         payload = {"code": "510300", "trades": [], "stats": {"trade_count": 0}}
         with patch("stock_ai.server.grid.simulate", return_value=payload) as simulate:

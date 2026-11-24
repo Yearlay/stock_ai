@@ -119,6 +119,27 @@
     };
   }
 
+  function visibleRange(candles, startPct, endPct) {
+    const list = candles || [];
+    const start = Math.max(0, Math.floor((startPct || 0) / 100 * list.length));
+    const end = Math.min(
+      list.length,
+      Math.ceil(((endPct === undefined ? 100 : endPct) / 100) * list.length)
+    );
+    let high = null;
+    let low = null;
+    list.slice(start, end).forEach(function (candle) {
+      if (!candle) return;
+      if (candle[3] !== null && candle[3] !== undefined && (high === null || candle[3] > high)) {
+        high = candle[3];
+      }
+      if (candle[2] !== null && candle[2] !== undefined && (low === null || candle[2] < low)) {
+        low = candle[2];
+      }
+    });
+    return { high: high, low: low };
+  }
+
   function chartZoom(total, limit) {
     const maxBars = limit || 330;
     const size = Math.min(total, maxBars);
@@ -128,6 +149,12 @@
       minValueSpan: Math.min(20, size),
       maxValueSpan: maxBars,
     };
+  }
+
+  function addSymbolUrl(code, start, end) {
+    return "/api/symbols/add?code=" + encodeURIComponent(code) +
+      "&start=" + encodeURIComponent(start) +
+      "&end=" + encodeURIComponent(end);
   }
 
   function gridUrl(settings) {
@@ -172,7 +199,9 @@
     volumeColor: volumeColor,
     chartLayout: chartLayout,
     chartZoom: chartZoom,
+    visibleRange: visibleRange,
     gridUrl: gridUrl,
+    addSymbolUrl: addSymbolUrl,
     buildUpdateUrl: buildUpdateUrl,
     queryRange: queryRange,
   };
@@ -185,6 +214,7 @@
   };
   const byId = function (id) { return document.getElementById(id); };
   let chart = null;
+  let rangeHandler = null;
 
   function dateText(date) {
     const year = date.getFullYear();
@@ -323,6 +353,39 @@
         },
       ],
     }, true);
+
+    function updateRangeLabels() {
+      const option = chart.getOption();
+      const zoom = (option.dataZoom && option.dataZoom[0]) || {};
+      const range = visibleRange(
+        data.candles,
+        zoom.start === undefined ? 0 : zoom.start,
+        zoom.end === undefined ? 100 : zoom.end
+      );
+      chart.setOption({
+        graphic: [
+          {
+            type: "text", left: 72, top: 34, silent: true,
+            style: {
+              text: "区间最高: " + (range.high === null ? "-" : range.high),
+              fill: "#dc2626", font: "12px sans-serif",
+            },
+          },
+          {
+            type: "text", left: 72, top: 52, silent: true,
+            style: {
+              text: "区间最低: " + (range.low === null ? "-" : range.low),
+              fill: "#16a34a", font: "12px sans-serif",
+            },
+          },
+        ],
+      });
+    }
+
+    if (rangeHandler) chart.off("datazoom", rangeHandler);
+    rangeHandler = updateRangeLabels;
+    chart.on("datazoom", rangeHandler);
+    updateRangeLabels();
   }
 
   async function postJson(url, payload) {
@@ -511,6 +574,7 @@
     headers.forEach(function (text) {
       const th = document.createElement("th");
       th.textContent = text;
+      th.title = text;
       headRow.appendChild(th);
     });
     head.appendChild(headRow);
@@ -680,6 +744,29 @@
     }
   }
 
+  function openAddDialog() {
+    byId("addError").textContent = "";
+    byId("addDialog").hidden = false;
+  }
+
+  async function submitAddSymbol(event) {
+    event.preventDefault();
+    const code = byId("addCode").value.trim();
+    const start = byId("startDate").value.replace(/-/g, "");
+    const end = byId("endDate").value.replace(/-/g, "");
+    byId("addError").textContent = "";
+    try {
+      await fetchJson(addSymbolUrl(code, start, end));
+      byId("addDialog").hidden = true;
+      renderMenu(await fetchJson("/api/symbols"));
+      const button = document.querySelector('.symbol[data-code="' + code + '"]');
+      if (button) button.click();
+      setStatus("已添加 " + code);
+    } catch (error) {
+      byId("addError").textContent = "输入的标的代码错误，请重新输入";
+    }
+  }
+
   async function init() {
     const end = new Date();
     const start = new Date();
@@ -688,6 +775,11 @@
     byId("startDate").value = dateText(start);
 
     byId("updateBtn").addEventListener("click", updateFromRange);
+    byId("addSymbolBtn").addEventListener("click", openAddDialog);
+    byId("addCancel").addEventListener("click", function () {
+      byId("addDialog").hidden = true;
+    });
+    byId("addForm").addEventListener("submit", submitAddSymbol);
     byId("gridSettingsBtn").addEventListener("click", openGridDialog);
     byId("gridCancel").addEventListener("click", function () {
       byId("gridDialog").hidden = true;

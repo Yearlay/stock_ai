@@ -19,6 +19,19 @@ html, body {
   flex-direction: column;
 }
 
+.add-symbol {
+  margin: auto 12px 16px;
+  padding: 8px;
+  border: 1px dashed #475569;
+  border-radius: 6px;
+  background: transparent;
+  color: #e2e8f0;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.add-symbol:hover { background: #1e293b; border-color: #94a3b8; }
+
 .brand {
   padding: 16px 12px;
   font-size: 16px;
@@ -184,12 +197,13 @@ html, body {
   flex: 1;
   min-height: 0;
   overflow: auto;
-  padding: 12px;
+  padding: 0 12px 12px;
   font-size: 12px;
   color: #64748b;
+  overscroll-behavior: contain;
 }
 
-.grid-content table { width: 100%; border-collapse: collapse; }
+.grid-content table { width: 100%; border-collapse: separate; border-spacing: 0; }
 .grid-content th, .grid-content td {
   padding: 6px 8px;
   text-align: right;
@@ -197,7 +211,23 @@ html, body {
   border-bottom: 1px solid #f1f5f9;
 }
 .grid-content th:first-child, .grid-content td:first-child { text-align: left; }
-.grid-content th { position: sticky; top: 0; background: #f8fafc; color: #475569; }
+.grid-content thead {
+  position: sticky;
+  top: 0;
+  z-index: 3;
+  box-shadow: 0 2px 4px rgba(15, 23, 42, 0.08);
+}
+.grid-content th {
+  position: sticky;
+  top: 0;
+  z-index: 4;
+  background: #f8fafc;
+  color: #475569;
+  border-bottom: 1px solid #cbd5e1;
+  cursor: help;
+}
+.grid-content th:hover { background: #e2e8f0; color: #0f172a; }
+.grid-content tbody tr:hover td { background: #f8fafc; }
 .grid-content .stats { margin: 0 0 12px; line-height: 1.7; color: #334155; }
 .grid-content .summary { margin-bottom: 12px; color: #334155; }
 
@@ -301,6 +331,8 @@ td.up { color: #16a34a; }
   border-radius: 6px;
   font-size: 13px;
 }
+
+.dialog-error { margin: 4px 0 0; color: #dc2626; font-size: 12px; min-height: 16px; }
 
 .dialog-actions { display: flex; gap: 8px; justify-content: flex-end; margin-top: 8px; }
 
