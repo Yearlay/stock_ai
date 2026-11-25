@@ -100,9 +100,19 @@ class QuoteTest(IsolatedCacheTest):
         self.assertEqual(result, {"rc": 0, "data": {"f43": 100}})
 
     def test_network_error_becomes_quote_error(self):
-        with patch.object(eastmoney, "urlopen", side_effect=URLError("boom")):
+        with patch.object(eastmoney, "urlopen", side_effect=URLError("boom")) as urlopen, \
+             patch.object(eastmoney.time, "sleep"):
             with self.assertRaises(eastmoney.QuoteError):
                 eastmoney._request_json(eastmoney.QUOTE_URL, {})
+        self.assertEqual(urlopen.call_count, 3)
+
+    def test_network_error_retries_then_succeeds(self):
+        attempts = [URLError("remote closed"), FakeResponse('{"rc":0,"data":{"f43":100}}')]
+        with patch.object(eastmoney, "urlopen", side_effect=attempts) as urlopen, \
+             patch.object(eastmoney.time, "sleep"):
+            result = eastmoney._request_json(eastmoney.QUOTE_URL, {})
+        self.assertEqual(result, {"rc": 0, "data": {"f43": 100}})
+        self.assertEqual(urlopen.call_count, 2)
 
 
 class HistoryTest(IsolatedCacheTest):

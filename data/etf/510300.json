@@ -3,8 +3,8 @@
     "code": "510300",
     "name": "沪深300ETF华泰柏瑞",
     "source": "eastmoney",
-    "query_begin_time": "2025-11-24",
-    "query_end_time": "2026-11-24",
+    "query_begin_time": "2026-11-24",
+    "query_end_time": "2026-11-25",
     "kline_title": [
       "日期",
       "开盘价",
@@ -5984,7 +5984,7 @@
         "amplitude": 0.99,
         "pct_change": 0.9,
         "change": 0.04,
-        "turnover_rate": 1.61
+        "turnover_rate": 1.63
       },
       {
         "date": "2025-11-26",
@@ -5997,7 +5997,7 @@
         "amplitude": 1.16,
         "pct_change": 0.65,
         "change": 0.029,
-        "turnover_rate": 1.64
+        "turnover_rate": 1.67
       },
       {
         "date": "2025-11-27",
@@ -6010,7 +6010,7 @@
         "amplitude": 1.24,
         "pct_change": -0.09,
         "change": -0.004,
-        "turnover_rate": 0.86
+        "turnover_rate": 0.87
       },
       {
         "date": "2025-11-28",
@@ -6023,7 +6023,7 @@
         "amplitude": 0.87,
         "pct_change": 0.29,
         "change": 0.013,
-        "turnover_rate": 0.93
+        "turnover_rate": 0.95
       },
       {
         "date": "2025-12-01",
@@ -6036,7 +6036,7 @@
         "amplitude": 1.09,
         "pct_change": 1.15,
         "change": 0.052,
-        "turnover_rate": 1.04
+        "turnover_rate": 1.06
       },
       {
         "date": "2025-12-02",
@@ -6049,7 +6049,7 @@
         "amplitude": 0.77,
         "pct_change": -0.46,
         "change": -0.021,
-        "turnover_rate": 0.69
+        "turnover_rate": 0.7
       },
       {
         "date": "2025-12-03",
@@ -6062,7 +6062,7 @@
         "amplitude": 1.08,
         "pct_change": -0.46,
         "change": -0.021,
-        "turnover_rate": 0.71
+        "turnover_rate": 0.72
       },
       {
         "date": "2025-12-04",
@@ -6075,7 +6075,7 @@
         "amplitude": 0.95,
         "pct_change": 0.27,
         "change": 0.012,
-        "turnover_rate": 0.72
+        "turnover_rate": 0.73
       },
       {
         "date": "2025-12-05",
@@ -6088,7 +6088,7 @@
         "amplitude": 1.48,
         "pct_change": 0.9,
         "change": 0.041,
-        "turnover_rate": 1.24
+        "turnover_rate": 1.25
       },
       {
         "date": "2025-12-08",
@@ -6101,7 +6101,7 @@
         "amplitude": 0.98,
         "pct_change": 0.74,
         "change": 0.034,
-        "turnover_rate": 1.49
+        "turnover_rate": 1.51
       },
       {
         "date": "2025-12-09",
@@ -6114,7 +6114,7 @@
         "amplitude": 0.98,
         "pct_change": -0.52,
         "change": -0.024,
-        "turnover_rate": 1.26
+        "turnover_rate": 1.28
       },
       {
         "date": "2025-12-10",
@@ -6127,7 +6127,7 @@
         "amplitude": 1.11,
         "pct_change": -0.13,
         "change": -0.006,
-        "turnover_rate": 1.12
+        "turnover_rate": 1.13
       },
       {
         "date": "2025-12-11",
@@ -6140,7 +6140,7 @@
         "amplitude": 1.31,
         "pct_change": -0.74,
         "change": -0.034,
-        "turnover_rate": 1.12
+        "turnover_rate": 1.13
       },
       {
         "date": "2025-12-12",
@@ -6153,7 +6153,7 @@
         "amplitude": 1.19,
         "pct_change": 0.57,
         "change": 0.026,
-        "turnover_rate": 1.56
+        "turnover_rate": 1.58
       },
       {
         "date": "2025-12-15",
@@ -6166,7 +6166,7 @@
         "amplitude": 3.54,
         "pct_change": -0.59,
         "change": -0.027,
-        "turnover_rate": 1.24
+        "turnover_rate": 1.26
       },
       {
         "date": "2025-12-16",
@@ -6179,7 +6179,7 @@
         "amplitude": 1.45,
         "pct_change": -1.03,
         "change": -0.047,
-        "turnover_rate": 1.38
+        "turnover_rate": 1.4
       },
       {
         "date": "2025-12-17",
@@ -6192,7 +6192,7 @@
         "amplitude": 2.2,
         "pct_change": 1.76,
         "change": 0.079,
-        "turnover_rate": 1.95
+        "turnover_rate": 1.98
       },
       {
         "date": "2025-12-18",
@@ -6205,7 +6205,7 @@
         "amplitude": 0.68,
         "pct_change": -0.68,
         "change": -0.031,
-        "turnover_rate": 1.22
+        "turnover_rate": 1.24
       },
       {
         "date": "2025-12-19",
@@ -6218,7 +6218,7 @@
         "amplitude": 1.06,
         "pct_change": 0.44,
         "change": 0.02,
-        "turnover_rate": 1.5
+        "turnover_rate": 1.52
       },
       {
         "date": "2025-12-22",
@@ -6231,7 +6231,7 @@
         "amplitude": 0.72,
         "pct_change": 0.92,
         "change": 0.042,
-        "turnover_rate": 1.51
+        "turnover_rate": 1.53
       },
       {
         "date": "2025-12-23",
@@ -6244,7 +6244,7 @@
         "amplitude": 0.8,
         "pct_change": 0.22,
         "change": 0.01,
-        "turnover_rate": 1.45
+        "turnover_rate": 1.47
       },
       {
         "date": "2025-12-24",
@@ -6257,7 +6257,7 @@
         "amplitude": 0.84,
         "pct_change": 0.37,
         "change": 0.017,
-        "turnover_rate": 0.96
+        "turnover_rate": 0.97
       },
       {
         "date": "2025-12-25",
@@ -6270,7 +6270,7 @@
         "amplitude": 0.71,
         "pct_change": 0.19,
         "change": 0.009,
-        "turnover_rate": 0.77
+        "turnover_rate": 0.78
       },
       {
         "date": "2025-12-26",
@@ -6283,7 +6283,7 @@
         "amplitude": 0.99,
         "pct_change": 0.39,
         "change": 0.018,
-        "turnover_rate": 1.47
+        "turnover_rate": 1.49
       },
       {
         "date": "2025-12-29",
@@ -6296,7 +6296,7 @@
         "amplitude": 0.97,
         "pct_change": -0.45,
         "change": -0.021,
-        "turnover_rate": 1.53
+        "turnover_rate": 1.56
       },
       {
         "date": "2025-12-30",
@@ -6309,7 +6309,7 @@
         "amplitude": 1.03,
         "pct_change": 0.22,
         "change": 0.01,
-        "turnover_rate": 0.86
+        "turnover_rate": 0.87
       },
       {
         "date": "2025-12-31",
@@ -6322,7 +6322,7 @@
         "amplitude": 1.01,
         "pct_change": -0.43,
         "change": -0.02,
-        "turnover_rate": 1.2
+        "turnover_rate": 1.22
       },
       {
         "date": "2026-01-05",
@@ -6335,7 +6335,7 @@
         "amplitude": 1.47,
         "pct_change": 1.97,
         "change": 0.091,
-        "turnover_rate": 1.83
+        "turnover_rate": 1.86
       },
       {
         "date": "2026-01-06",
@@ -6348,7 +6348,7 @@
         "amplitude": 1.53,
         "pct_change": 1.59,
         "change": 0.075,
-        "turnover_rate": 1.89
+        "turnover_rate": 1.92
       },
       {
         "date": "2026-01-07",
@@ -6361,7 +6361,7 @@
         "amplitude": 1.06,
         "pct_change": -0.38,
         "change": -0.018,
-        "turnover_rate": 1.68
+        "turnover_rate": 1.7
       },
       {
         "date": "2026-01-08",
@@ -6374,7 +6374,7 @@
         "amplitude": 1.07,
         "pct_change": -0.8,
         "change": -0.038,
-        "turnover_rate": 1.23
+        "turnover_rate": 1.25
       },
       {
         "date": "2026-01-09",
@@ -6387,7 +6387,7 @@
         "amplitude": 1.24,
         "pct_change": 0.46,
         "change": 0.022,
-        "turnover_rate": 2.04
+        "turnover_rate": 2.07
       },
       {
         "date": "2026-01-12",
@@ -6400,7 +6400,7 @@
         "amplitude": 1.43,
         "pct_change": 0.59,
         "change": 0.028,
-        "turnover_rate": 2.4
+        "turnover_rate": 2.43
       },
       {
         "date": "2026-01-13",
@@ -6413,7 +6413,7 @@
         "amplitude": 1.86,
         "pct_change": -0.35,
         "change": -0.017,
-        "turnover_rate": 2.29
+        "turnover_rate": 2.32
       },
       {
         "date": "2026-01-14",
@@ -6426,7 +6426,7 @@
         "amplitude": 2.26,
         "pct_change": -0.63,
         "change": -0.03,
-        "turnover_rate": 3.84
+        "turnover_rate": 3.9
       },
       {
         "date": "2026-01-15",
@@ -6439,7 +6439,7 @@
         "amplitude": 1.08,
         "pct_change": 0.19,
         "change": 0.009,
-        "turnover_rate": 9.39
+        "turnover_rate": 9.52
       },
       {
         "date": "2026-01-16",
@@ -6452,7 +6452,7 @@
         "amplitude": 1.7,
         "pct_change": -0.34,
         "change": -0.016,
-        "turnover_rate": 9.57
+        "turnover_rate": 9.71
       },
       {
         "date": "2026-01-19",
@@ -6465,7 +6465,7 @@
         "amplitude": 1.08,
         "pct_change": 0.04,
         "change": 0.002,
-        "turnover_rate": 5.24
+        "turnover_rate": 5.32
       },
       {
         "date": "2026-01-20",
@@ -6478,7 +6478,7 @@
         "amplitude": 1.33,
         "pct_change": -0.3,
         "change": -0.014,
-        "turnover_rate": 5.19
+        "turnover_rate": 5.27
       },
       {
         "date": "2026-01-21",
@@ -6491,7 +6491,7 @@
         "amplitude": 1.16,
         "pct_change": 0.13,
         "change": 0.006,
-        "turnover_rate": 8.82
+        "turnover_rate": 8.95
       },
       {
         "date": "2026-01-22",
@@ -6504,7 +6504,7 @@
         "amplitude": 1.21,
         "pct_change": -0.06,
         "change": -0.003,
-        "turnover_rate": 7.76
+        "turnover_rate": 7.88
       },
       {
         "date": "2026-01-23",
@@ -6517,7 +6517,7 @@
         "amplitude": 1.16,
         "pct_change": -0.49,
         "change": -0.023,
-        "turnover_rate": 12.18
+        "turnover_rate": 12.35
       },
       {
         "date": "2026-01-26",
@@ -6530,7 +6530,7 @@
         "amplitude": 1.4,
         "pct_change": 0.17,
         "change": 0.008,
-        "turnover_rate": 10.69
+        "turnover_rate": 10.84
       },
       {
         "date": "2026-01-27",
@@ -6543,7 +6543,7 @@
         "amplitude": 1.34,
         "pct_change": -0.04,
         "change": -0.002,
-        "turnover_rate": 7.81
+        "turnover_rate": 7.92
       },
       {
         "date": "2026-01-28",
@@ -6556,7 +6556,7 @@
         "amplitude": 0.83,
         "pct_change": 0.32,
         "change": 0.015,
-        "turnover_rate": 15.29
+        "turnover_rate": 15.5
       },
       {
         "date": "2026-01-29",
@@ -6569,7 +6569,7 @@
         "amplitude": 1.59,
         "pct_change": 0.91,
         "change": 0.043,
-        "turnover_rate": 6.38
+        "turnover_rate": 6.47
       },
       {
         "date": "2026-01-30",
@@ -6582,7 +6582,7 @@
         "amplitude": 2.43,
         "pct_change": -1.2,
         "change": -0.057,
-        "turnover_rate": 3.0
+        "turnover_rate": 3.05
       },
       {
         "date": "2026-02-02",
@@ -6595,7 +6595,7 @@
         "amplitude": 2.72,
         "pct_change": -2.36,
         "change": -0.111,
-        "turnover_rate": 4.77
+        "turnover_rate": 4.84
       },
       {
         "date": "2026-02-03",
@@ -6608,7 +6608,7 @@
         "amplitude": 1.8,
         "pct_change": 1.39,
         "change": 0.064,
-        "turnover_rate": 1.89
+        "turnover_rate": 1.92
       },
       {
         "date": "2026-02-04",
@@ -6621,7 +6621,7 @@
         "amplitude": 1.42,
         "pct_change": 0.92,
         "change": 0.043,
-        "turnover_rate": 1.89
+        "turnover_rate": 1.92
       },
       {
         "date": "2026-02-05",
@@ -6634,7 +6634,7 @@
         "amplitude": 1.06,
         "pct_change": -0.59,
         "change": -0.028,
-        "turnover_rate": 1.68
+        "turnover_rate": 1.7
       },
       {
         "date": "2026-02-06",
@@ -6647,7 +6647,7 @@
         "amplitude": 1.73,
         "pct_change": -0.64,
         "change": -0.03,
-        "turnover_rate": 1.59
+        "turnover_rate": 1.61
       },
       {
         "date": "2026-02-09",
@@ -6660,7 +6660,7 @@
         "amplitude": 0.95,
         "pct_change": 1.68,
         "change": 0.078,
-        "turnover_rate": 1.26
+        "turnover_rate": 1.28
       },
       {
         "date": "2026-02-10",
@@ -6673,7 +6673,7 @@
         "amplitude": 0.4,
         "pct_change": 0.13,
         "change": 0.006,
-        "turnover_rate": 1.22
+        "turnover_rate": 1.24
       },
       {
         "date": "2026-02-11",
@@ -6686,7 +6686,7 @@
         "amplitude": 0.38,
         "pct_change": -0.21,
         "change": -0.01,
-        "turnover_rate": 0.67
+        "turnover_rate": 0.68
       },
       {
         "date": "2026-02-12",
@@ -6699,7 +6699,7 @@
         "amplitude": 0.4,
         "pct_change": 0.08,
         "change": 0.004,
-        "turnover_rate": 0.72
+        "turnover_rate": 0.73
       },
       {
         "date": "2026-02-13",
@@ -6712,7 +6712,7 @@
         "amplitude": 0.99,
         "pct_change": -1.18,
         "change": -0.056,
-        "turnover_rate": 2.46
+        "turnover_rate": 2.49
       },
       {
         "date": "2026-02-24",
@@ -6725,7 +6725,7 @@
         "amplitude": 0.66,
         "pct_change": 0.96,
         "change": 0.045,
-        "turnover_rate": 1.12
+        "turnover_rate": 1.14
       },
       {
         "date": "2026-02-25",
@@ -6738,7 +6738,7 @@
         "amplitude": 1.31,
         "pct_change": 0.72,
         "change": 0.034,
-        "turnover_rate": 1.57
+        "turnover_rate": 1.59
       },
       {
         "date": "2026-02-26",
@@ -6751,7 +6751,7 @@
         "amplitude": 0.88,
         "pct_change": -0.32,
         "change": -0.015,
-        "turnover_rate": 1.38
+        "turnover_rate": 1.4
       },
       {
         "date": "2026-02-27",
@@ -6764,7 +6764,7 @@
         "amplitude": 0.68,
         "pct_change": -0.21,
         "change": -0.01,
-        "turnover_rate": 1.09
+        "turnover_rate": 1.11
       },
       {
         "date": "2026-03-02",
@@ -6777,7 +6777,7 @@
         "amplitude": 1.46,
         "pct_change": 0.3,
         "change": 0.014,
-        "turnover_rate": 2.23
+        "turnover_rate": 2.27
       },
       {
         "date": "2026-03-03",
@@ -6790,7 +6790,7 @@
         "amplitude": 1.81,
         "pct_change": -1.29,
         "change": -0.061,
-        "turnover_rate": 1.74
+        "turnover_rate": 1.76
       },
       {
         "date": "2026-03-04",
@@ -6803,7 +6803,7 @@
         "amplitude": 1.35,
         "pct_change": -1.45,
         "change": -0.068,
-        "turnover_rate": 1.49
+        "turnover_rate": 1.51
       },
       {
         "date": "2026-03-05",
@@ -6816,7 +6816,7 @@
         "amplitude": 0.85,
         "pct_change": 0.95,
         "change": 0.044,
-        "turnover_rate": 1.02
+        "turnover_rate": 1.04
       },
       {
         "date": "2026-03-06",
@@ -6829,7 +6829,7 @@
         "amplitude": 1.25,
         "pct_change": 0.28,
         "change": 0.013,
-        "turnover_rate": 0.91
+        "turnover_rate": 0.92
       },
       {
         "date": "2026-03-09",
@@ -6842,7 +6842,7 @@
         "amplitude": 1.67,
         "pct_change": -0.81,
         "change": -0.038,
-        "turnover_rate": 1.51
+        "turnover_rate": 1.53
       },
       {
         "date": "2026-03-10",
@@ -6855,7 +6855,7 @@
         "amplitude": 1.04,
         "pct_change": 1.17,
         "change": 0.054,
-        "turnover_rate": 0.98
+        "turnover_rate": 1.0
       },
       {
         "date": "2026-03-11",
@@ -6868,7 +6868,7 @@
         "amplitude": 0.79,
         "pct_change": 0.6,
         "change": 0.028,
-        "turnover_rate": 1.07
+        "turnover_rate": 1.08
       },
       {
         "date": "2026-03-12",
@@ -6881,7 +6881,7 @@
         "amplitude": 0.98,
         "pct_change": -0.36,
         "change": -0.017,
-        "turnover_rate": 0.62
+        "turnover_rate": 0.63
       },
       {
         "date": "2026-03-13",
@@ -6894,7 +6894,7 @@
         "amplitude": 0.98,
         "pct_change": -0.36,
         "change": -0.017,
-        "turnover_rate": 0.58
+        "turnover_rate": 0.59
       },
       {
         "date": "2026-03-16",
@@ -6907,7 +6907,7 @@
         "amplitude": 1.15,
         "pct_change": 0.06,
         "change": 0.003,
-        "turnover_rate": 0.73
+        "turnover_rate": 0.74
       },
       {
         "date": "2026-03-17",
@@ -6920,7 +6920,7 @@
         "amplitude": 1.84,
         "pct_change": -0.73,
         "change": -0.034,
-        "turnover_rate": 1.3
+        "turnover_rate": 1.32
       },
       {
         "date": "2026-03-18",
@@ -6933,7 +6933,7 @@
         "amplitude": 1.16,
         "pct_change": 0.34,
         "change": 0.016,
-        "turnover_rate": 1.39
+        "turnover_rate": 1.41
       },
       {
         "date": "2026-03-19",
@@ -6946,7 +6946,7 @@
         "amplitude": 1.29,
         "pct_change": -1.35,
         "change": -0.063,
-        "turnover_rate": 1.39
+        "turnover_rate": 1.41
       },
       {
         "date": "2026-03-20",
@@ -6959,7 +6959,7 @@
         "amplitude": 1.35,
         "pct_change": -0.5,
         "change": -0.023,
-        "turnover_rate": 1.37
+        "turnover_rate": 1.39
       },
       {
         "date": "2026-03-23",
@@ -6972,7 +6972,7 @@
         "amplitude": 2.86,
         "pct_change": -3.19,
         "change": -0.146,
-        "turnover_rate": 2.74
+        "turnover_rate": 2.78
       },
       {
         "date": "2026-03-24",
@@ -6985,7 +6985,7 @@
         "amplitude": 1.69,
         "pct_change": 1.11,
         "change": 0.049,
-        "turnover_rate": 1.53
+        "turnover_rate": 1.55
       },
       {
         "date": "2026-03-25",
@@ -6998,7 +6998,7 @@
         "amplitude": 1.0,
         "pct_change": 1.45,
         "change": 0.065,
-        "turnover_rate": 1.56
+        "turnover_rate": 1.58
       },
       {
         "date": "2026-03-26",
@@ -7011,7 +7011,7 @@
         "amplitude": 1.54,
         "pct_change": -1.23,
         "change": -0.056,
-        "turnover_rate": 0.85
+        "turnover_rate": 0.87
       },
       {
         "date": "2026-03-27",
@@ -7024,7 +7024,7 @@
         "amplitude": 1.89,
         "pct_change": 0.45,
         "change": 0.02,
-        "turnover_rate": 1.01
+        "turnover_rate": 1.03
       },
       {
         "date": "2026-03-30",
@@ -7037,7 +7037,7 @@
         "amplitude": 1.15,
         "pct_change": -0.18,
         "change": -0.008,
-        "turnover_rate": 0.98
+        "turnover_rate": 0.99
       },
       {
         "date": "2026-03-31",
@@ -7050,7 +7050,7 @@
         "amplitude": 1.49,
         "pct_change": -0.82,
         "change": -0.037,
-        "turnover_rate": 0.95
+        "turnover_rate": 0.97
       },
       {
         "date": "2026-04-01",
@@ -7063,7 +7063,7 @@
         "amplitude": 0.92,
         "pct_change": 1.59,
         "change": 0.071,
-        "turnover_rate": 0.9
+        "turnover_rate": 0.91
       },
       {
         "date": "2026-04-02",
@@ -7076,7 +7076,7 @@
         "amplitude": 1.24,
         "pct_change": -0.99,
         "change": -0.045,
-        "turnover_rate": 0.84
+        "turnover_rate": 0.85
       },
       {
         "date": "2026-04-03",
@@ -7089,7 +7089,7 @@
         "amplitude": 1.34,
         "pct_change": -0.78,
         "change": -0.035,
-        "turnover_rate": 0.77
+        "turnover_rate": 0.78
       },
       {
         "date": "2026-04-07",
@@ -7102,7 +7102,7 @@
         "amplitude": 0.88,
         "pct_change": -0.18,
         "change": -0.008,
-        "turnover_rate": 0.77
+        "turnover_rate": 0.78
       },
       {
         "date": "2026-04-08",
@@ -7115,7 +7115,7 @@
         "amplitude": 1.96,
         "pct_change": 3.51,
         "change": 0.156,
-        "turnover_rate": 1.79
+        "turnover_rate": 1.82
       },
       {
         "date": "2026-04-09",
@@ -7128,7 +7128,7 @@
         "amplitude": 0.56,
         "pct_change": -0.65,
         "change": -0.03,
-        "turnover_rate": 1.27
+        "turnover_rate": 1.29
       },
       {
         "date": "2026-04-10",
@@ -7141,7 +7141,7 @@
         "amplitude": 1.66,
         "pct_change": 1.53,
         "change": 0.07,
-        "turnover_rate": 1.63
+        "turnover_rate": 1.65
       },
       {
         "date": "2026-04-13",
@@ -7154,7 +7154,7 @@
         "amplitude": 0.8,
         "pct_change": 0.22,
         "change": 0.01,
-        "turnover_rate": 0.71
+        "turnover_rate": 0.72
       },
       {
         "date": "2026-04-14",
@@ -7167,7 +7167,7 @@
         "amplitude": 1.05,
         "pct_change": 1.29,
         "change": 0.06,
-        "turnover_rate": 0.77
+        "turnover_rate": 0.78
       },
       {
         "date": "2026-04-15",
@@ -7180,7 +7180,7 @@
         "amplitude": 1.32,
         "pct_change": -0.38,
         "change": -0.018,
-        "turnover_rate": 1.22
+        "turnover_rate": 1.23
       },
       {
         "date": "2026-04-16",
@@ -7193,7 +7193,7 @@
         "amplitude": 1.0,
         "pct_change": 1.11,
         "change": 0.052,
-        "turnover_rate": 1.53
+        "turnover_rate": 1.56
       },
       {
         "date": "2026-04-17",
@@ -7206,7 +7206,7 @@
         "amplitude": 0.59,
         "pct_change": -0.15,
         "change": -0.007,
-        "turnover_rate": 1.32
+        "turnover_rate": 1.34
       },
       {
         "date": "2026-04-20",
@@ -7219,7 +7219,7 @@
         "amplitude": 1.03,
         "pct_change": 0.55,
         "change": 0.026,
-        "turnover_rate": 1.37
+        "turnover_rate": 1.39
       },
       {
         "date": "2026-04-21",
@@ -7232,7 +7232,7 @@
         "amplitude": 1.18,
         "pct_change": 0.23,
         "change": 0.011,
-        "turnover_rate": 1.14
+        "turnover_rate": 1.16
       },
       {
         "date": "2026-04-22",
@@ -7245,7 +7245,7 @@
         "amplitude": 1.19,
         "pct_change": 0.73,
         "change": 0.035,
-        "turnover_rate": 1.82
+        "turnover_rate": 1.85
       },
       {
         "date": "2026-04-23",
@@ -7258,7 +7258,7 @@
         "amplitude": 1.29,
         "pct_change": -0.21,
         "change": -0.01,
-        "turnover_rate": 1.81
+        "turnover_rate": 1.84
       },
       {
         "date": "2026-04-24",
@@ -7271,7 +7271,7 @@
         "amplitude": 1.0,
         "pct_change": -0.4,
         "change": -0.019,
-        "turnover_rate": 1.29
+        "turnover_rate": 1.31
       },
       {
         "date": "2026-04-27",
@@ -7284,7 +7284,7 @@
         "amplitude": 0.77,
         "pct_change": 0.0,
         "change": 0.0,
-        "turnover_rate": 1.67
+        "turnover_rate": 1.69
       },
       {
         "date": "2026-04-28",
@@ -7297,7 +7297,7 @@
         "amplitude": 0.69,
         "pct_change": -0.25,
         "change": -0.012,
-        "turnover_rate": 1.56
+        "turnover_rate": 1.58
       },
       {
         "date": "2026-04-29",
@@ -7310,7 +7310,7 @@
         "amplitude": 1.53,
         "pct_change": 1.07,
         "change": 0.051,
-        "turnover_rate": 2.3
+        "turnover_rate": 2.33
       },
       {
         "date": "2026-04-30",
@@ -7323,7 +7323,7 @@
         "amplitude": 0.68,
         "pct_change": 0.06,
         "change": 0.003,
-        "turnover_rate": 2.97
+        "turnover_rate": 3.01
       },
       {
         "date": "2026-05-06",
@@ -7336,7 +7336,7 @@
         "amplitude": 1.29,
         "pct_change": 1.33,
         "change": 0.064,
-        "turnover_rate": 3.36
+        "turnover_rate": 3.41
       },
       {
         "date": "2026-05-07",
@@ -7349,7 +7349,7 @@
         "amplitude": 0.72,
         "pct_change": 0.49,
         "change": 0.024,
-        "turnover_rate": 3.77
+        "turnover_rate": 3.82
       },
       {
         "date": "2026-05-08",
@@ -7362,7 +7362,7 @@
         "amplitude": 0.81,
         "pct_change": -0.53,
         "change": -0.026,
-        "turnover_rate": 2.26
+        "turnover_rate": 2.29
       },
       {
         "date": "2026-05-11",
@@ -7375,7 +7375,7 @@
         "amplitude": 1.64,
         "pct_change": 1.64,
         "change": 0.08,
-        "turnover_rate": 3.81
+        "turnover_rate": 3.86
       },
       {
         "date": "2026-05-12",
@@ -7388,7 +7388,7 @@
         "amplitude": 0.87,
         "pct_change": -0.06,
         "change": -0.003,
-        "turnover_rate": 1.8
+        "turnover_rate": 1.83
       },
       {
         "date": "2026-05-13",
@@ -7401,7 +7401,7 @@
         "amplitude": 1.69,
         "pct_change": 1.09,
         "change": 0.054,
-        "turnover_rate": 2.29
+        "turnover_rate": 2.32
       },
       {
         "date": "2026-05-14",
@@ -7414,7 +7414,7 @@
         "amplitude": 2.19,
         "pct_change": -1.51,
         "change": -0.076,
-        "turnover_rate": 1.85
+        "turnover_rate": 1.88
       },
       {
         "date": "2026-05-15",
@@ -7427,7 +7427,7 @@
         "amplitude": 2.06,
         "pct_change": -1.28,
         "change": -0.063,
-        "turnover_rate": 1.89
+        "turnover_rate": 1.91
       },
       {
         "date": "2026-05-18",
@@ -7440,7 +7440,7 @@
         "amplitude": 1.35,
         "pct_change": -0.53,
         "change": -0.026,
-        "turnover_rate": 1.05
+        "turnover_rate": 1.06
       },
       {
         "date": "2026-05-19",
@@ -7453,7 +7453,7 @@
         "amplitude": 1.75,
         "pct_change": 0.35,
         "change": 0.017,
-        "turnover_rate": 1.74
+        "turnover_rate": 1.77
       },
       {
         "date": "2026-05-20",
@@ -7466,7 +7466,7 @@
         "amplitude": 0.86,
         "pct_change": 0.04,
         "change": 0.002,
-        "turnover_rate": 1.73
+        "turnover_rate": 1.75
       },
       {
         "date": "2026-05-21",
@@ -7479,7 +7479,7 @@
         "amplitude": 3.14,
         "pct_change": -1.29,
         "change": -0.063,
-        "turnover_rate": 2.17
+        "turnover_rate": 2.2
       },
       {
         "date": "2026-05-22",
@@ -7492,7 +7492,7 @@
         "amplitude": 1.27,
         "pct_change": 1.12,
         "change": 0.054,
-        "turnover_rate": 2.38
+        "turnover_rate": 2.42
       },
       {
         "date": "2026-05-25",
@@ -7505,7 +7505,7 @@
         "amplitude": 1.36,
         "pct_change": 1.54,
         "change": 0.075,
-        "turnover_rate": 2.92
+        "turnover_rate": 2.96
       },
       {
         "date": "2026-05-26",
@@ -7518,7 +7518,7 @@
         "amplitude": 1.32,
         "pct_change": 0.71,
         "change": 0.035,
-        "turnover_rate": 1.74
+        "turnover_rate": 1.77
       },
       {
         "date": "2026-05-27",
@@ -7531,7 +7531,7 @@
         "amplitude": 1.61,
         "pct_change": -0.8,
         "change": -0.04,
-        "turnover_rate": 1.15
+        "turnover_rate": 1.17
       },
       {
         "date": "2026-05-28",
@@ -7544,7 +7544,7 @@
         "amplitude": 1.66,
         "pct_change": 0.0,
         "change": 0.0,
-        "turnover_rate": 0.79
+        "turnover_rate": 0.8
       },
       {
         "date": "2026-05-29",
@@ -7557,7 +7557,7 @@
         "amplitude": 1.58,
         "pct_change": -0.18,
         "change": -0.009,
-        "turnover_rate": 1.18
+        "turnover_rate": 1.2
       },
       {
         "date": "2026-06-01",
@@ -7570,7 +7570,7 @@
         "amplitude": 1.6,
         "pct_change": -1.12,
         "change": -0.055,
-        "turnover_rate": 0.9
+        "turnover_rate": 0.91
       },
       {
         "date": "2026-06-02",
@@ -7583,7 +7583,7 @@
         "amplitude": 2.05,
         "pct_change": 1.4,
         "change": 0.068,
-        "turnover_rate": 1.23
+        "turnover_rate": 1.24
       },
       {
         "date": "2026-06-03",
@@ -7596,7 +7596,7 @@
         "amplitude": 1.78,
         "pct_change": 0.59,
         "change": 0.029,
-        "turnover_rate": 1.37
+        "turnover_rate": 1.39
       },
       {
         "date": "2026-06-04",
@@ -7609,7 +7609,7 @@
         "amplitude": 1.03,
         "pct_change": -0.79,
         "change": -0.039,
-        "turnover_rate": 1.1
+        "turnover_rate": 1.11
       },
       {
         "date": "2026-06-05",
@@ -7622,7 +7622,7 @@
         "amplitude": 2.5,
         "pct_change": -1.68,
         "change": -0.083,
-        "turnover_rate": 1.11
+        "turnover_rate": 1.13
       },
       {
         "date": "2026-06-08",
@@ -7635,7 +7635,7 @@
         "amplitude": 2.13,
         "pct_change": -2.15,
         "change": -0.104,
-        "turnover_rate": 1.66
+        "turnover_rate": 1.68
       },
       {
         "date": "2026-06-09",
@@ -7648,7 +7648,7 @@
         "amplitude": 1.84,
         "pct_change": 1.84,
         "change": 0.087,
-        "turnover_rate": 0.78
+        "turnover_rate": 0.8
       },
       {
         "date": "2026-06-10",
@@ -7661,7 +7661,7 @@
         "amplitude": 1.31,
         "pct_change": -0.87,
         "change": -0.042,
-        "turnover_rate": 0.71
+        "turnover_rate": 0.72
       },
       {
         "date": "2026-06-11",
@@ -7674,7 +7674,7 @@
         "amplitude": 1.57,
         "pct_change": -0.69,
         "change": -0.033,
-        "turnover_rate": 0.75
+        "turnover_rate": 0.76
       },
       {
         "date": "2026-06-12",
@@ -7687,7 +7687,7 @@
         "amplitude": 1.2,
         "pct_change": 1.41,
         "change": 0.067,
-        "turnover_rate": 1.4
+        "turnover_rate": 1.42
       },
       {
         "date": "2026-06-15",
@@ -7700,7 +7700,7 @@
         "amplitude": 1.68,
         "pct_change": 2.1,
         "change": 0.101,
-        "turnover_rate": 2.92
+        "turnover_rate": 2.96
       },
       {
         "date": "2026-06-16",
@@ -7713,7 +7713,7 @@
         "amplitude": 0.81,
         "pct_change": -0.18,
         "change": -0.009,
-        "turnover_rate": 1.63
+        "turnover_rate": 1.66
       },
       {
         "date": "2026-06-17",
@@ -7726,7 +7726,7 @@
         "amplitude": 1.34,
         "pct_change": 0.98,
         "change": 0.048,
-        "turnover_rate": 2.5
+        "turnover_rate": 2.54
       },
       {
         "date": "2026-06-18",
@@ -7739,7 +7739,7 @@
         "amplitude": 1.21,
         "pct_change": 0.52,
         "change": 0.026,
-        "turnover_rate": 2.33
+        "turnover_rate": 2.36
       },
       {
         "date": "2026-06-22",
@@ -7752,7 +7752,7 @@
         "amplitude": 2.83,
         "pct_change": 2.15,
         "change": 0.107,
-        "turnover_rate": 3.44
+        "turnover_rate": 3.49
       },
       {
         "date": "2026-06-23",
@@ -7765,7 +7765,7 @@
         "amplitude": 3.54,
         "pct_change": -2.93,
         "change": -0.149,
-        "turnover_rate": 4.71
+        "turnover_rate": 4.78
       },
       {
         "date": "2026-06-24",
@@ -7778,7 +7778,7 @@
         "amplitude": 1.25,
         "pct_change": 0.51,
         "change": 0.025,
-        "turnover_rate": 4.66
+        "turnover_rate": 4.73
       },
       {
         "date": "2026-06-25",
@@ -7791,7 +7791,7 @@
         "amplitude": 1.79,
         "pct_change": 1.63,
         "change": 0.081,
-        "turnover_rate": 4.75
+        "turnover_rate": 4.82
       },
       {
         "date": "2026-06-26",
@@ -7804,7 +7804,7 @@
         "amplitude": 2.67,
         "pct_change": -2.79,
         "change": -0.141,
-        "turnover_rate": 1.72
+        "turnover_rate": 1.75
       },
       {
         "date": "2026-06-29",
@@ -7817,7 +7817,7 @@
         "amplitude": 2.04,
         "pct_change": 1.06,
         "change": 0.052,
-        "turnover_rate": 2.67
+        "turnover_rate": 2.71
       },
       {
         "date": "2026-06-30",
@@ -7830,7 +7830,7 @@
         "amplitude": 1.61,
         "pct_change": 1.21,
         "change": 0.06,
-        "turnover_rate": 3.65
+        "turnover_rate": 3.7
       },
       {
         "date": "2026-07-01",
@@ -7843,7 +7843,7 @@
         "amplitude": 1.93,
         "pct_change": -0.42,
         "change": -0.021,
-        "turnover_rate": 1.73
+        "turnover_rate": 1.76
       },
       {
         "date": "2026-07-02",
@@ -7856,7 +7856,7 @@
         "amplitude": 2.5,
         "pct_change": -2.96,
         "change": -0.148,
-        "turnover_rate": 2.46
+        "turnover_rate": 2.5
       },
       {
         "date": "2026-07-03",
@@ -7869,7 +7869,7 @@
         "amplitude": 2.04,
         "pct_change": 0.54,
         "change": 0.026,
-        "turnover_rate": 3.59
+        "turnover_rate": 3.65
       },
       {
         "date": "2026-07-06",
@@ -7882,7 +7882,7 @@
         "amplitude": 1.7,
         "pct_change": 0.02,
         "change": 0.001,
-        "turnover_rate": 1.11
+        "turnover_rate": 1.13
       },
       {
         "date": "2026-07-07",
@@ -7895,7 +7895,7 @@
         "amplitude": 1.66,
         "pct_change": -1.05,
         "change": -0.051,
-        "turnover_rate": 1.26
+        "turnover_rate": 1.27
       },
       {
         "date": "2026-07-08",
@@ -7908,7 +7908,7 @@
         "amplitude": 1.64,
         "pct_change": -0.58,
         "change": -0.028,
-        "turnover_rate": 0.87
+        "turnover_rate": 0.88
       },
       {
         "date": "2026-07-09",
@@ -7921,7 +7921,7 @@
         "amplitude": 3.08,
         "pct_change": 2.46,
         "change": 0.118,
-        "turnover_rate": 1.72
+        "turnover_rate": 1.74
       },
       {
         "date": "2026-07-10",
@@ -7934,7 +7934,7 @@
         "amplitude": 2.48,
         "pct_change": -1.77,
         "change": -0.087,
-        "turnover_rate": 1.48
+        "turnover_rate": 1.5
       },
       {
         "date": "2026-07-13",
@@ -7947,7 +7947,7 @@
         "amplitude": 2.11,
         "pct_change": -1.76,
         "change": -0.085,
-        "turnover_rate": 2.91
+        "turnover_rate": 2.95
       },
       {
         "date": "2026-07-14",
@@ -7960,7 +7960,7 @@
         "amplitude": 2.99,
         "pct_change": 1.96,
         "change": 0.093,
-        "turnover_rate": 3.25
+        "turnover_rate": 3.3
       },
       {
         "date": "2026-07-15",
@@ -7973,7 +7973,7 @@
         "amplitude": 1.05,
         "pct_change": 0.02,
         "change": 0.001,
-        "turnover_rate": 1.3
+        "turnover_rate": 1.32
       },
       {
         "date": "2026-07-16",
@@ -7986,7 +7986,7 @@
         "amplitude": 2.09,
         "pct_change": -1.76,
         "change": -0.085,
-        "turnover_rate": 2.98
+        "turnover_rate": 3.02
       },
       {
         "date": "2026-07-17",
@@ -7999,7 +7999,7 @@
         "amplitude": 3.87,
         "pct_change": -3.45,
         "change": -0.164,
-        "turnover_rate": 5.69
+        "turnover_rate": 5.77
       },
       {
         "date": "2026-07-20",
@@ -8012,7 +8012,7 @@
         "amplitude": 2.35,
         "pct_change": 1.33,
         "change": 0.061,
-        "turnover_rate": 7.21
+        "turnover_rate": 7.32
       },
       {
         "date": "2026-07-21",
@@ -8025,7 +8025,7 @@
         "amplitude": 3.7,
         "pct_change": 2.95,
         "change": 0.137,
-        "turnover_rate": 4.93
+        "turnover_rate": 5.0
       },
       {
         "date": "2026-07-22",
@@ -8038,7 +8038,7 @@
         "amplitude": 1.52,
         "pct_change": -0.46,
         "change": -0.022,
-        "turnover_rate": 2.28
+        "turnover_rate": 2.31
       },
       {
         "date": "2026-07-23",
@@ -8051,7 +8051,7 @@
         "amplitude": 0.84,
         "pct_change": 0.46,
         "change": 0.022,
-        "turnover_rate": 1.05
+        "turnover_rate": 1.06
       },
       {
         "date": "2026-07-24",
@@ -8064,7 +8064,7 @@
         "amplitude": 1.25,
         "pct_change": -1.8,
         "change": -0.086,
-        "turnover_rate": 1.84
+        "turnover_rate": 1.87
       },
       {
         "date": "2026-07-27",
@@ -8077,7 +8077,7 @@
         "amplitude": 1.79,
         "pct_change": 1.11,
         "change": 0.052,
-        "turnover_rate": 1.75
+        "turnover_rate": 1.77
       },
       {
         "date": "2026-07-28",
@@ -8090,7 +8090,7 @@
         "amplitude": 1.91,
         "pct_change": -2.65,
         "change": -0.126,
-        "turnover_rate": 3.03
+        "turnover_rate": 3.07
       },
       {
         "date": "2026-07-29",
@@ -8103,7 +8103,7 @@
         "amplitude": 2.42,
         "pct_change": 0.65,
         "change": 0.03,
-        "turnover_rate": 2.72
+        "turnover_rate": 2.75
       },
       {
         "date": "2026-07-30",
@@ -8116,7 +8116,7 @@
         "amplitude": 2.56,
         "pct_change": -1.12,
         "change": -0.052,
-        "turnover_rate": 2.72
+        "turnover_rate": 2.76
       },
       {
         "date": "2026-07-31",
@@ -8129,7 +8129,7 @@
         "amplitude": 1.28,
         "pct_change": 1.04,
         "change": 0.048,
-        "turnover_rate": 2.7
+        "turnover_rate": 2.74
       },
       {
         "date": "2026-08-03",
@@ -8142,7 +8142,7 @@
         "amplitude": 1.01,
         "pct_change": -1.16,
         "change": -0.054,
-        "turnover_rate": 1.67
+        "turnover_rate": 1.69
       },
       {
         "date": "2026-08-04",
@@ -8155,7 +8155,7 @@
         "amplitude": 1.24,
         "pct_change": 1.13,
         "change": 0.052,
-        "turnover_rate": 2.11
+        "turnover_rate": 2.14
       },
       {
         "date": "2026-08-05",
@@ -8168,7 +8168,7 @@
         "amplitude": 2.67,
         "pct_change": 1.35,
         "change": 0.063,
-        "turnover_rate": 2.56
+        "turnover_rate": 2.6
       },
       {
         "date": "2026-08-06",
@@ -8181,7 +8181,7 @@
         "amplitude": 1.34,
         "pct_change": -0.11,
         "change": -0.005,
-        "turnover_rate": 1.58
+        "turnover_rate": 1.6
       },
       {
         "date": "2026-08-07",
@@ -8194,7 +8194,7 @@
         "amplitude": 1.23,
         "pct_change": 0.89,
         "change": 0.042,
-        "turnover_rate": 1.7
+        "turnover_rate": 1.72
       },
       {
         "date": "2026-08-10",
@@ -8207,7 +8207,7 @@
         "amplitude": 1.09,
         "pct_change": 0.17,
         "change": 0.008,
-        "turnover_rate": 1.01
+        "turnover_rate": 1.02
       },
       {
         "date": "2026-08-11",
@@ -8220,7 +8220,7 @@
         "amplitude": 1.11,
         "pct_change": -0.65,
         "change": -0.031,
-        "turnover_rate": 0.96
+        "turnover_rate": 0.98
       },
       {
         "date": "2026-08-12",
@@ -8233,7 +8233,7 @@
         "amplitude": 0.82,
         "pct_change": 0.42,
         "change": 0.02,
-        "turnover_rate": 1.62
+        "turnover_rate": 1.64
       },
       {
         "date": "2026-08-13",
@@ -8246,7 +8246,7 @@
         "amplitude": 1.28,
         "pct_change": -0.4,
         "change": -0.019,
-        "turnover_rate": 1.65
+        "turnover_rate": 1.67
       },
       {
         "date": "2026-08-14",
@@ -8259,7 +8259,7 @@
         "amplitude": 0.87,
         "pct_change": -0.06,
         "change": -0.003,
-        "turnover_rate": 1.23
+        "turnover_rate": 1.25
       },
       {
         "date": "2026-08-17",
@@ -8272,7 +8272,7 @@
         "amplitude": 1.63,
         "pct_change": 1.59,
         "change": 0.075,
-        "turnover_rate": 1.5
+        "turnover_rate": 1.52
       },
       {
         "date": "2026-08-18",
@@ -8285,7 +8285,7 @@
         "amplitude": 1.08,
         "pct_change": -0.29,
         "change": -0.014,
-        "turnover_rate": 1.18
+        "turnover_rate": 1.2
       },
       {
         "date": "2026-08-19",
@@ -8298,7 +8298,7 @@
         "amplitude": 2.55,
         "pct_change": -2.78,
         "change": -0.133,
-        "turnover_rate": 2.76
+        "turnover_rate": 2.8
       },
       {
         "date": "2026-08-20",
@@ -8311,7 +8311,7 @@
         "amplitude": 1.22,
         "pct_change": -0.02,
         "change": -0.001,
-        "turnover_rate": 1.35
+        "turnover_rate": 1.37
       },
       {
         "date": "2026-08-21",
@@ -8324,7 +8324,7 @@
         "amplitude": 1.12,
         "pct_change": 0.58,
         "change": 0.027,
-        "turnover_rate": 1.31
+        "turnover_rate": 1.33
       },
       {
         "date": "2026-08-24",
@@ -8337,7 +8337,7 @@
         "amplitude": 2.12,
         "pct_change": -1.13,
         "change": -0.053,
-        "turnover_rate": 1.66
+        "turnover_rate": 1.68
       },
       {
         "date": "2026-08-25",
@@ -8350,7 +8350,7 @@
         "amplitude": 1.12,
         "pct_change": -0.24,
         "change": -0.011,
-        "turnover_rate": 1.34
+        "turnover_rate": 1.36
       },
       {
         "date": "2026-08-26",
@@ -8363,7 +8363,7 @@
         "amplitude": 1.49,
         "pct_change": 0.78,
         "change": 0.036,
-        "turnover_rate": 1.52
+        "turnover_rate": 1.54
       },
       {
         "date": "2026-08-27",
@@ -8376,7 +8376,7 @@
         "amplitude": 0.97,
         "pct_change": 0.84,
         "change": 0.039,
-        "turnover_rate": 1.15
+        "turnover_rate": 1.17
       },
       {
         "date": "2026-08-28",
@@ -8389,7 +8389,7 @@
         "amplitude": 0.66,
         "pct_change": -0.26,
         "change": -0.012,
-        "turnover_rate": 1.09
+        "turnover_rate": 1.1
       },
       {
         "date": "2026-08-31",
@@ -8402,7 +8402,7 @@
         "amplitude": 1.58,
         "pct_change": 0.13,
         "change": 0.006,
-        "turnover_rate": 1.21
+        "turnover_rate": 1.23
       },
       {
         "date": "2026-09-01",
@@ -8415,7 +8415,7 @@
         "amplitude": 0.83,
         "pct_change": -0.02,
         "change": -0.001,
-        "turnover_rate": 1.52
+        "turnover_rate": 1.54
       },
       {
         "date": "2026-09-02",
@@ -8428,7 +8428,7 @@
         "amplitude": 1.13,
         "pct_change": -1.37,
         "change": -0.064,
-        "turnover_rate": 1.14
+        "turnover_rate": 1.16
       },
       {
         "date": "2026-09-03",
@@ -8441,7 +8441,7 @@
         "amplitude": 0.97,
         "pct_change": 0.02,
         "change": 0.001,
-        "turnover_rate": 0.9
+        "turnover_rate": 0.91
       },
       {
         "date": "2026-09-04",
@@ -8454,7 +8454,7 @@
         "amplitude": 1.58,
         "pct_change": -0.11,
         "change": -0.005,
-        "turnover_rate": 1.51
+        "turnover_rate": 1.54
       },
       {
         "date": "2026-09-07",
@@ -8467,7 +8467,7 @@
         "amplitude": 0.8,
         "pct_change": 0.39,
         "change": 0.018,
-        "turnover_rate": 1.79
+        "turnover_rate": 1.81
       },
       {
         "date": "2026-09-08",
@@ -8480,7 +8480,7 @@
         "amplitude": 1.01,
         "pct_change": -0.22,
         "change": -0.01,
-        "turnover_rate": 1.1
+        "turnover_rate": 1.12
       },
       {
         "date": "2026-09-09",
@@ -8493,7 +8493,7 @@
         "amplitude": 0.76,
         "pct_change": 0.28,
         "change": 0.013,
-        "turnover_rate": 1.03
+        "turnover_rate": 1.05
       },
       {
         "date": "2026-09-10",
@@ -8506,7 +8506,7 @@
         "amplitude": 0.88,
         "pct_change": -0.43,
         "change": -0.02,
-        "turnover_rate": 0.79
+        "turnover_rate": 0.8
       },
       {
         "date": "2026-09-11",
@@ -8519,7 +8519,7 @@
         "amplitude": 1.3,
         "pct_change": -0.82,
         "change": -0.038,
-        "turnover_rate": 1.74
+        "turnover_rate": 1.76
       },
       {
         "date": "2026-09-14",
@@ -8532,7 +8532,7 @@
         "amplitude": 0.79,
         "pct_change": -0.59,
         "change": -0.027,
-        "turnover_rate": 1.13
+        "turnover_rate": 1.15
       },
       {
         "date": "2026-09-15",
@@ -8545,7 +8545,7 @@
         "amplitude": 1.16,
         "pct_change": -0.64,
         "change": -0.029,
-        "turnover_rate": 1.25
+        "turnover_rate": 1.27
       },
       {
         "date": "2026-09-16",
@@ -8558,7 +8558,7 @@
         "amplitude": 1.55,
         "pct_change": 0.6,
         "change": 0.027,
-        "turnover_rate": 1.74
+        "turnover_rate": 1.77
       },
       {
         "date": "2026-09-17",
@@ -8571,7 +8571,7 @@
         "amplitude": 0.97,
         "pct_change": -0.4,
         "change": -0.018,
-        "turnover_rate": 0.91
+        "turnover_rate": 0.93
       },
       {
         "date": "2026-09-18",
@@ -8584,7 +8584,7 @@
         "amplitude": 1.06,
         "pct_change": 1.1,
         "change": 0.05,
-        "turnover_rate": 1.13
+        "turnover_rate": 1.15
       },
       {
         "date": "2026-09-21",
@@ -8597,7 +8597,7 @@
         "amplitude": 0.74,
         "pct_change": 0.57,
         "change": 0.026,
-        "turnover_rate": 1.03
+        "turnover_rate": 1.04
       },
       {
         "date": "2026-09-22",
@@ -8610,7 +8610,7 @@
         "amplitude": 1.0,
         "pct_change": 0.11,
         "change": 0.005,
-        "turnover_rate": 1.16
+        "turnover_rate": 1.18
       },
       {
         "date": "2026-09-23",
@@ -8623,7 +8623,7 @@
         "amplitude": 0.76,
         "pct_change": -0.5,
         "change": -0.023,
-        "turnover_rate": 1.14
+        "turnover_rate": 1.16
       },
       {
         "date": "2026-09-24",
@@ -8636,7 +8636,7 @@
         "amplitude": 1.46,
         "pct_change": -1.63,
         "change": -0.075,
-        "turnover_rate": 1.28
+        "turnover_rate": 1.3
       },
       {
         "date": "2026-09-28",
@@ -8649,7 +8649,7 @@
         "amplitude": 2.35,
         "pct_change": -2.17,
         "change": -0.098,
-        "turnover_rate": 1.77
+        "turnover_rate": 1.8
       },
       {
         "date": "2026-09-29",
@@ -8662,7 +8662,7 @@
         "amplitude": 0.75,
         "pct_change": -0.02,
         "change": -0.001,
-        "turnover_rate": 0.84
+        "turnover_rate": 0.85
       },
       {
         "date": "2026-09-30",
@@ -8675,7 +8675,7 @@
         "amplitude": 0.66,
         "pct_change": 0.36,
         "change": 0.016,
-        "turnover_rate": 0.89
+        "turnover_rate": 0.9
       },
       {
         "date": "2026-10-08",
@@ -8688,7 +8688,7 @@
         "amplitude": 2.28,
         "pct_change": -0.97,
         "change": -0.043,
-        "turnover_rate": 1.35
+        "turnover_rate": 1.37
       },
       {
         "date": "2026-10-09",
@@ -8701,7 +8701,7 @@
         "amplitude": 2.07,
         "pct_change": -0.09,
         "change": -0.004,
-        "turnover_rate": 2.3
+        "turnover_rate": 2.33
       },
       {
         "date": "2026-10-12",
@@ -8714,7 +8714,7 @@
         "amplitude": 1.3,
         "pct_change": -0.57,
         "change": -0.025,
-        "turnover_rate": 1.25
+        "turnover_rate": 1.27
       },
       {
         "date": "2026-10-13",
@@ -8727,7 +8727,7 @@
         "amplitude": 2.25,
         "pct_change": -0.34,
         "change": -0.015,
-        "turnover_rate": 1.95
+        "turnover_rate": 1.97
       },
       {
         "date": "2026-10-14",
@@ -8740,7 +8740,7 @@
         "amplitude": 1.54,
         "pct_change": -1.17,
         "change": -0.051,
-        "turnover_rate": 1.59
+        "turnover_rate": 1.62
       },
       {
         "date": "2026-10-15",
@@ -8753,7 +8753,7 @@
         "amplitude": 1.47,
         "pct_change": -1.21,
         "change": -0.052,
-        "turnover_rate": 2.84
+        "turnover_rate": 2.88
       },
       {
         "date": "2026-10-16",
@@ -8766,7 +8766,7 @@
         "amplitude": 1.93,
         "pct_change": -0.14,
         "change": -0.006,
-        "turnover_rate": 6.84
+        "turnover_rate": 6.93
       },
       {
         "date": "2026-10-19",
@@ -8779,7 +8779,7 @@
         "amplitude": 1.11,
         "pct_change": 0.09,
         "change": 0.004,
-        "turnover_rate": 2.18
+        "turnover_rate": 2.21
       },
       {
         "date": "2026-10-20",
@@ -8792,7 +8792,7 @@
         "amplitude": 1.51,
         "pct_change": -0.47,
         "change": -0.02,
-        "turnover_rate": 1.9
+        "turnover_rate": 1.93
       },
       {
         "date": "2026-10-21",
@@ -8805,7 +8805,7 @@
         "amplitude": 1.59,
         "pct_change": -0.83,
         "change": -0.035,
-        "turnover_rate": 2.55
+        "turnover_rate": 2.58
       },
       {
         "date": "2026-10-22",
@@ -8818,7 +8818,7 @@
         "amplitude": 2.2,
         "pct_change": -1.86,
         "change": -0.078,
-        "turnover_rate": 6.37
+        "turnover_rate": 6.46
       },
       {
         "date": "2026-10-23",
@@ -8831,7 +8831,7 @@
         "amplitude": 3.77,
         "pct_change": 1.73,
         "change": 0.071,
-        "turnover_rate": 6.76
+        "turnover_rate": 6.85
       },
       {
         "date": "2026-10-26",
@@ -8844,7 +8844,7 @@
         "amplitude": 1.36,
         "pct_change": 0.02,
         "change": 0.001,
-        "turnover_rate": 3.81
+        "turnover_rate": 3.87
       },
       {
         "date": "2026-10-27",
@@ -8857,7 +8857,7 @@
         "amplitude": 1.65,
         "pct_change": -1.34,
         "change": -0.056,
-        "turnover_rate": 2.53
+        "turnover_rate": 2.56
       },
       {
         "date": "2026-10-28",
@@ -8870,7 +8870,7 @@
         "amplitude": 0.82,
         "pct_change": 0.7,
         "change": 0.029,
-        "turnover_rate": 1.98
+        "turnover_rate": 2.0
       },
       {
         "date": "2026-10-29",
@@ -8883,7 +8883,7 @@
         "amplitude": 1.04,
         "pct_change": -0.99,
         "change": -0.041,
-        "turnover_rate": 3.89
+        "turnover_rate": 3.94
       },
       {
         "date": "2026-10-30",
@@ -8896,7 +8896,7 @@
         "amplitude": 1.95,
         "pct_change": -1.12,
         "change": -0.046,
-        "turnover_rate": 3.8
+        "turnover_rate": 3.86
       },
       {
         "date": "2026-11-02",
@@ -8909,7 +8909,7 @@
         "amplitude": 1.35,
         "pct_change": 0.49,
         "change": 0.02,
-        "turnover_rate": 5.31
+        "turnover_rate": 5.38
       },
       {
         "date": "2026-11-03",
@@ -8922,7 +8922,7 @@
         "amplitude": 1.59,
         "pct_change": 0.17,
         "change": 0.007,
-        "turnover_rate": 8.37
+        "turnover_rate": 8.49
       },
       {
         "date": "2026-11-04",
@@ -8935,7 +8935,7 @@
         "amplitude": 3.15,
         "pct_change": 2.03,
         "change": 0.083,
-        "turnover_rate": 5.48
+        "turnover_rate": 5.56
       },
       {
         "date": "2026-11-05",
@@ -8948,7 +8948,7 @@
         "amplitude": 1.7,
         "pct_change": 0.48,
         "change": 0.02,
-        "turnover_rate": 3.23
+        "turnover_rate": 3.28
       },
       {
         "date": "2026-11-06",
@@ -8961,7 +8961,7 @@
         "amplitude": 1.76,
         "pct_change": -1.69,
         "change": -0.071,
-        "turnover_rate": 2.27
+        "turnover_rate": 2.3
       },
       {
         "date": "2026-11-09",
@@ -8974,7 +8974,7 @@
         "amplitude": 0.73,
         "pct_change": 0.15,
         "change": 0.006,
-        "turnover_rate": 1.92
+        "turnover_rate": 1.94
       },
       {
         "date": "2026-11-10",
@@ -8987,7 +8987,7 @@
         "amplitude": 0.97,
         "pct_change": 0.12,
         "change": 0.005,
-        "turnover_rate": 2.16
+        "turnover_rate": 2.2
       },
       {
         "date": "2026-11-11",
@@ -9000,7 +9000,7 @@
         "amplitude": 1.28,
         "pct_change": 0.36,
         "change": 0.015,
-        "turnover_rate": 1.9
+        "turnover_rate": 1.93
       },
       {
         "date": "2026-11-12",
@@ -9013,7 +9013,7 @@
         "amplitude": 1.66,
         "pct_change": -0.87,
         "change": -0.036,
-        "turnover_rate": 2.09
+        "turnover_rate": 2.12
       },
       {
         "date": "2026-11-13",
@@ -9026,7 +9026,7 @@
         "amplitude": 1.24,
         "pct_change": -0.75,
         "change": -0.031,
-        "turnover_rate": 1.53
+        "turnover_rate": 1.55
       },
       {
         "date": "2026-11-16",
@@ -9039,7 +9039,7 @@
         "amplitude": 0.96,
         "pct_change": -0.71,
         "change": -0.029,
-        "turnover_rate": 3.6
+        "turnover_rate": 3.65
       },
       {
         "date": "2026-11-17",
@@ -9052,7 +9052,7 @@
         "amplitude": 1.06,
         "pct_change": -0.3,
         "change": -0.012,
-        "turnover_rate": 3.61
+        "turnover_rate": 3.66
       },
       {
         "date": "2026-11-18",
@@ -9065,7 +9065,7 @@
         "amplitude": 1.04,
         "pct_change": 0.4,
         "change": 0.016,
-        "turnover_rate": 3.39
+        "turnover_rate": 3.44
       },
       {
         "date": "2026-11-19",
@@ -9078,7 +9078,7 @@
         "amplitude": 1.45,
         "pct_change": 0.05,
         "change": 0.002,
-        "turnover_rate": 5.02
+        "turnover_rate": 5.09
       },
       {
         "date": "2026-11-20",
@@ -9091,7 +9091,7 @@
         "amplitude": 1.6,
         "pct_change": -1.03,
         "change": -0.042,
-        "turnover_rate": 8.17
+        "turnover_rate": 8.29
       },
       {
         "date": "2026-11-23",
@@ -9104,7 +9104,7 @@
         "amplitude": 1.72,
         "pct_change": 0.12,
         "change": 0.005,
-        "turnover_rate": 2.51
+        "turnover_rate": 2.54
       },
       {
         "date": "2026-11-24",
@@ -9117,7 +9117,20 @@
         "amplitude": 1.32,
         "pct_change": 0.25,
         "change": 0.01,
-        "turnover_rate": 2.47
+        "turnover_rate": 2.5
+      },
+      {
+        "date": "2026-11-25",
+        "open": 4.004,
+        "close": 3.97,
+        "high": 4.013,
+        "low": 3.962,
+        "volume": 19830746,
+        "amount": 7911780481.0,
+        "amplitude": 1.26,
+        "pct_change": -1.56,
+        "change": -0.063,
+        "turnover_rate": 3.62
       }
     ]
   },

@@ -7,6 +7,7 @@ from __future__ import annotations
 
 import json
 import re
+import time
 from datetime import date, datetime, timedelta, timezone
 from urllib.error import HTTPError, URLError
 from urllib.parse import urlencode
@@ -19,9 +20,18 @@ QUOTE_URL = "https://push2.eastmoney.com/api/qt/stock/get"
 KLINE_URL = "https://push2his.eastmoney.com/api/qt/stock/kline/get"
 
 _REQUEST_HEADERS = {
-    "User-Agent": "Mozilla/5.0 (compatible; stock-ai/0.1)",
+    "User-Agent": (
+        "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) "
+        "AppleWebKit/537.36 (KHTML, like Gecko) "
+        "Chrome/120.0.0.0 Safari/537.36"
+    ),
+    "Accept": "*/*",
+    "Accept-Language": "zh-CN,zh;q=0.9",
     "Referer": "https://quote.eastmoney.com/",
+    "Connection": "close",
 }
+_REQUEST_ATTEMPTS = 3
+_RETRY_BASE_DELAY = 0.5
 _CODE_RE = re.compile(r"^\d{6}$")
 _DATE_RE = re.compile(r"^\d{8}$")
 _VALID_PERIODS = frozenset({1, 5, 15, 30, 60, 101, 102, 103})
@@ -71,12 +81,22 @@ def _normalize_date(value, field: str) -> str:
 
 
 def _request_json(url: str, params: dict) -> dict:
-    request = Request(f"{url}?{urlencode(params)}", headers=_REQUEST_HEADERS)
-    try:
-        with urlopen(request, timeout=10) as response:
-            text = response.read().decode("utf-8", errors="replace")
-    except (HTTPError, URLError, TimeoutError, OSError) as exc:
-        raise QuoteError(f"请求东方财富接口失败: {exc}") from exc
+    query = urlencode(params)
+    last_exc = None
+    for attempt in range(_REQUEST_ATTEMPTS):
+        request = Request(f"{url}?{query}", headers=_REQUEST_HEADERS)
+        try:
+            with urlopen(request, timeout=10) as response:
+                text = response.read().decode("utf-8", errors="replace")
+            break
+        except (HTTPError, URLError, TimeoutError, OSError) as exc:
+            last_exc = exc
+            if attempt + 1 < _REQUEST_ATTEMPTS:
+                time.sleep(_RETRY_BASE_DELAY * (2 ** attempt))
+    else:
+        raise QuoteError(
+            f"请求东方财富接口失败（已重试 {_REQUEST_ATTEMPTS} 次）: {last_exc}"
+        ) from last_exc
 
     stripped = text.strip()
     if not stripped.startswith(("{", "[")):
