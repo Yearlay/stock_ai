@@ -120,4 +120,12 @@ assert.equal(rows[0][1], "4.084");
 assert.equal(rows[0][2], "-");
 assert.equal(rows[0][5], "1,234,567");
 
+const suggested = ui.suggestedGridValues(4, 4.31);
+assert.equal(suggested.base_price, "4.118");
+assert.equal(suggested.grid_shares, 1200);
+assert.equal(suggested.base_shares, 6000);
+assert.equal(suggested.up_pct, "0.39");
+assert.equal(suggested.down_pct, suggested.up_pct);
+assert.equal(ui.suggestedGridValues(4, 4), null);
+
 console.log("ui_test OK");

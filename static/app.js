@@ -188,6 +188,26 @@
     ];
   }
 
+  function suggestedGridValues(low, high) {
+    const bottom = Number(low);
+    const top = Number(high);
+    if (!Number.isFinite(bottom) || !Number.isFinite(top) || bottom <= 0 || top <= bottom) {
+      return null;
+    }
+    const basePrice = Number((bottom + (top - bottom) * 0.382).toFixed(3));
+    const gridShares = Math.floor(5000 / basePrice / 100) * 100;
+    if (gridShares <= 0) return null;
+    const baseShares = gridShares * 5;
+    const percent = (((top - bottom) / bottom) / 20 * 100).toFixed(2);
+    return {
+      base_price: basePrice.toFixed(3),
+      grid_shares: gridShares,
+      base_shares: baseShares,
+      up_pct: percent,
+      down_pct: percent,
+    };
+  }
+
   root.StockUI = {
     FIELD_KEYS: FIELD_KEYS,
     DEFAULT_TITLE: DEFAULT_TITLE,
@@ -200,6 +220,7 @@
     chartLayout: chartLayout,
     chartZoom: chartZoom,
     visibleRange: visibleRange,
+    suggestedGridValues: suggestedGridValues,
     gridUrl: gridUrl,
     addSymbolUrl: addSymbolUrl,
     buildUpdateUrl: buildUpdateUrl,
@@ -246,6 +267,7 @@
       return;
     }
     const data = chartData(payload.records, payload.period);
+    state.candles = data.candles;
     if (!chart) chart = echarts.init(node);
     node.className = "chart";
     if (!data.categories.length) {
@@ -533,6 +555,7 @@
     state.code = symbol.code;
     state.name = symbol.name;
     loadSavedGridSettings(symbol.code);
+    loadGridResult(symbol.code);
     const range = queryRange(symbol);
     if (range[0]) byId("startDate").value = range[0];
     if (range[1]) byId("endDate").value = range[1];
@@ -663,12 +686,26 @@
     );
   }
 
+  async function loadGridResult(code) {
+    if (!code) {
+      byId("gridContent").textContent = "无模拟交易记录";
+      return;
+    }
+    try {
+      const result = await fetchJson(
+        "/api/grid/result?code=" + encodeURIComponent(code)
+      );
+      state.gridResult = result.trades && result.trades.length ? result : null;
+      renderGridTrades(result, false);
+    } catch (error) {
+      setStatus(error.message, true);
+    }
+  }
+
   function renderGridStats(result) {
-    const container = byId("gridContent");
+    const container = byId("statsContent");
     container.innerHTML = "";
     const stats = result.stats || {};
-    const summary = document.createElement("div");
-    summary.className = "stats";
     const lines = [
       "初始仓位: " + stats.initial_position,
       "初始金额: " + stats.initial_amount,
@@ -685,10 +722,8 @@
       lines.push("当前成本: " + stats.current_cost);
     }
     lines.push("网格结束日期: " + stats.end_date);
-    summary.textContent = lines.join("\n");
-    summary.style.whiteSpace = "pre-line";
-    container.appendChild(summary);
-    renderGridTrades(result, true);
+    container.textContent = lines.join("\n");
+    byId("statsDialog").hidden = false;
   }
 
   async function fillGridBasePrice(code, start) {
@@ -715,6 +750,27 @@
     byId("gridShare").value = settings.grid_shares;
     byId("gridUpPct").value = settings.up_pct;
     byId("gridDownPct").value = settings.down_pct;
+  }
+
+  function applySuggestedGrid() {
+    const option = chart && typeof chart.getOption === "function" ? chart.getOption() : null;
+    const zoom = (option && option.dataZoom && option.dataZoom[0]) || {};
+    const range = visibleRange(
+      state.candles,
+      zoom.start === undefined ? 0 : zoom.start,
+      zoom.end === undefined ? 100 : zoom.end
+    );
+    const values = range ? suggestedGridValues(range.low, range.high) : null;
+    if (!values) {
+      setStatus("当前K线区间无法计算建议值", true);
+      return;
+    }
+    byId("gridBasePrice").value = values.base_price;
+    byId("gridShare").value = values.grid_shares;
+    byId("gridBaseShares").value = values.base_shares;
+    byId("gridUpPct").value = values.up_pct;
+    byId("gridDownPct").value = values.down_pct;
+    setStatus("已填入建议参数，点击保存后生效");
   }
 
   async function loadSavedGridSettings(code) {
@@ -788,7 +844,7 @@
       const result = await fetchJson(gridUrl(state.gridSettings));
       state.gridResult = result;
       if (showStats) renderGridStats(result);
-      else renderGridTrades(result, false);
+      else await loadGridResult(state.gridSettings.code);
       setStatus("");
     } catch (error) {
       setStatus(error.message, true);
@@ -852,6 +908,16 @@
     byId("startDate").value = dateText(start);
 
     byId("updateBtn").addEventListener("click", updateFromRange);
+    const chartToggle = byId("chartToggle");
+    chartToggle.addEventListener("click", function () {
+      const chartPanel = byId("chart");
+      const collapsed = !chartPanel.hidden;
+      chartPanel.hidden = collapsed;
+      chartToggle.classList.toggle("collapsed", collapsed);
+      chartToggle.title = collapsed ? "展开K线" : "收起K线";
+      chartToggle.setAttribute("aria-label", chartToggle.title);
+      if (!collapsed && chart) chart.resize();
+    });
     byId("addSymbolBtn").addEventListener("click", openAddDialog);
     byId("addCancel").addEventListener("click", function () {
       byId("addDialog").hidden = true;
@@ -869,6 +935,7 @@
       }
     });
     byId("gridSettingsBtn").addEventListener("click", openGridDialog);
+    byId("gridSuggestBtn").addEventListener("click", applySuggestedGrid);
     byId("gridCancel").addEventListener("click", function () {
       byId("gridDialog").hidden = true;
     });
@@ -878,6 +945,9 @@
     });
     byId("gridStatsBtn").addEventListener("click", function () {
       runGridSimulation(true);
+    });
+    byId("statsClose").addEventListener("click", function () {
+      byId("statsDialog").hidden = true;
     });
     window.addEventListener("resize", function () {
       if (chart) chart.resize();

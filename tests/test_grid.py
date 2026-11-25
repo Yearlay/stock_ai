@@ -103,6 +103,20 @@ class GridTest(unittest.TestCase):
         with self.assertRaises(ValueError):
             grid.save_settings({"code": "abc", "start": "2026-11-02"})
 
+    def test_save_and_load_result(self):
+        result = {
+            "code": "510300",
+            "trades": [{"date": "2026-11-03", "type": "卖出"}],
+            "stats": {"trade_count": 1},
+        }
+        path = grid.save_result(result)
+        self.assertEqual(path, cache.DATA_DIR / "grid" / "510300_grid.json")
+        self.assertTrue(path.is_file())
+        self.assertEqual(grid.load_result("510300"), result)
+        self.assertIsNone(grid.load_result("999999"))
+        with self.assertRaises(ValueError):
+            grid.result_path("abc")
+
     def test_invalid_params(self):
         with self.assertRaises(ValueError):
             grid.simulate("510300", "", 50, 50, 10, 10)

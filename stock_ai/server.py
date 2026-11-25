@@ -108,6 +108,10 @@ class StockHandler(BaseHTTPRequestHandler):
             if parsed.path == "/api/grid/settings":
                 self._send_json(200, grid.load_settings(self._require(query, "code")))
                 return
+            if parsed.path == "/api/grid/result":
+                result = grid.load_result(self._require(query, "code"))
+                self._send_json(200, result if result is not None else {"trades": []})
+                return
             if parsed.path == "/api/grid/simulate":
                 result = grid.simulate(
                     self._require(query, "code"),
@@ -119,6 +123,7 @@ class StockHandler(BaseHTTPRequestHandler):
                     query.get("fee", 5),
                     query.get("base_price"),
                 )
+                grid.save_result(result)
                 self._send_json(200, result)
                 return
             if parsed.path == "/api/quote":

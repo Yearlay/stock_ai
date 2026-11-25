@@ -28,6 +28,13 @@
           <button data-period="year" class="period">年线</button>
         </div>
         <span id="status" class="status"></span>
+        <button id="chartToggle" class="chart-toggle" type="button" title="收起K线" aria-label="收起K线">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor"
+               stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M6 15l6-6 6 6"></path>
+            <path d="M6 9l6-6 6 6"></path>
+          </svg>
+        </button>
       </header>
 
       <div id="chart" class="chart"></div>
@@ -68,7 +75,10 @@
 
   <div id="gridDialog" class="dialog-overlay" hidden>
     <div class="dialog grid-dialog">
-      <h2>设置网格</h2>
+      <div class="dialog-header">
+        <h2>设置网格</h2>
+        <button type="button" id="gridSuggestBtn" class="suggest">建议</button>
+      </div>
       <form id="gridForm">
         <label>网格标的 <input id="gridCode" type="text" required></label>
         <label>开始网格日期 <input id="gridStart" type="date" required></label>
@@ -83,6 +93,16 @@
           <button type="button" id="gridCancel">取消</button>
         </div>
       </form>
+    </div>
+  </div>
+
+  <div id="statsDialog" class="dialog-overlay" hidden>
+    <div class="dialog stats-dialog">
+      <h2>模拟统计</h2>
+      <div id="statsContent" class="stats-content"></div>
+      <div class="dialog-actions">
+        <button type="button" id="statsClose">关闭</button>
+      </div>
     </div>
   </div>
 

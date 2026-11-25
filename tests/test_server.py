@@ -126,7 +126,8 @@ class ServerTest(unittest.TestCase):
 
     def test_grid_simulate_endpoint(self):
         payload = {"code": "510300", "trades": [], "stats": {"trade_count": 0}}
-        with patch("stock_ai.server.grid.simulate", return_value=payload) as simulate:
+        with patch("stock_ai.server.grid.simulate", return_value=payload) as simulate, \
+             patch("stock_ai.server.grid.save_result") as save_result:
             status, body = self.request(
                 "/api/grid/simulate?code=510300&start=20261102&base_shares=50"
                 "&grid_shares=50&up_pct=10&down_pct=10&fee=1&base_price=10"
@@ -136,6 +137,19 @@ class ServerTest(unittest.TestCase):
         simulate.assert_called_once_with(
             "510300", "20261102", "50", "50", "10", "10", "1", "10"
         )
+        save_result.assert_called_once_with(payload)
+
+    def test_grid_result_endpoint(self):
+        payload = {"code": "510300", "trades": [{"date": "2026-11-03"}]}
+        with patch("stock_ai.server.grid.load_result", return_value=payload) as load:
+            status, body = self.request("/api/grid/result?code=510300")
+        self.assertEqual(status, 200)
+        self.assertEqual(body, payload)
+        load.assert_called_once_with("510300")
+        with patch("stock_ai.server.grid.load_result", return_value=None):
+            status, body = self.request("/api/grid/result?code=999999")
+        self.assertEqual(status, 200)
+        self.assertEqual(body, {"trades": []})
 
     def test_delete_symbol_endpoint(self):
         with patch("stock_ai.server.cache.delete_cache") as delete:

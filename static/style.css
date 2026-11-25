@@ -176,6 +176,23 @@ html, body {
 
 .toolbar button.active { background: #0f172a; border-color: #0f172a; color: #fff; }
 
+.toolbar button.chart-toggle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px 10px;
+  line-height: 1;
+}
+
+.toolbar button.chart-toggle svg {
+  display: block;
+  transition: transform 0.2s ease;
+}
+
+.toolbar button.chart-toggle.collapsed svg {
+  transform: rotate(180deg);
+}
+
 .status { margin-left: auto; font-size: 12px; color: #64748b; }
 
 .status.error { color: #dc2626; }
@@ -351,6 +368,15 @@ td.up { color: #16a34a; }
 
 .dialog h2 { margin: 0 0 8px; font-size: 16px; color: #0f172a; }
 
+.dialog-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+
+.dialog-header h2 { margin: 0; }
+
 .dialog p { margin: 0 0 16px; font-size: 13px; color: #475569; }
 
 .progress {
@@ -368,6 +394,20 @@ td.up { color: #16a34a; }
 }
 
 .grid-dialog { width: 480px; max-height: 90vh; overflow: auto; }
+
+.stats-dialog { width: 440px; max-height: 80vh; overflow: auto; }
+
+.stats-content {
+  margin: 12px 0 16px;
+  padding: 12px 16px;
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 6px;
+  font-size: 13px;
+  line-height: 1.9;
+  color: #334155;
+  white-space: pre-line;
+}
 
 .grid-dialog form { display: flex; flex-direction: column; gap: 10px; }
 
@@ -392,6 +432,16 @@ td.up { color: #16a34a; }
   border: 1px solid #cbd5e1;
   border-radius: 6px;
   background: #fff;
+  cursor: pointer;
+}
+
+.dialog button.suggest {
+  padding: 5px 12px;
+  border: 1px solid #93c5fd;
+  border-radius: 6px;
+  background: #fff;
+  color: #2563eb;
+  font-size: 12px;
   cursor: pointer;
 }
 

@@ -1,0 +1,29 @@
+{
+  "code": "512170",
+  "name": "医疗ETF华宝",
+  "settings": {
+    "start_date": "2026-11-24",
+    "base_shares": 75500,
+    "grid_shares": 15100,
+    "fee": 5.0,
+    "base_price": 0.331,
+    "up_pct": 2.02,
+    "down_pct": 2.02
+  },
+  "trades": [],
+  "stats": {
+    "initial_position": 75500,
+    "initial_amount": 24990.5,
+    "max_position": 75500,
+    "max_position_amount": 24990.5,
+    "period_days": 0,
+    "fee_total": 0.0,
+    "final_profit": -453.0,
+    "current_cost": 0.331,
+    "end_date": "2026-11-24",
+    "trade_count": 0,
+    "buy_count": 0,
+    "sell_count": 0,
+    "avg_trades_per_month": 0.0
+  }
+}

@@ -2,8 +2,10 @@
 
 from __future__ import annotations
 
+import json
 import re
 from datetime import date, datetime
+from pathlib import Path
 
 from . import cache
 
@@ -78,6 +80,32 @@ def save_settings(settings: dict) -> dict:
 def load_settings(code: str):
     value = cache.get_value(str(code or "").strip(), SETTINGS_KEY)
     return value if isinstance(value, dict) and value else None
+
+
+def result_path(code: str) -> Path:
+    code = str(code or "").strip()
+    if not re.fullmatch(r"\d{6}", code):
+        raise ValueError("网格标的必须为 6 位代码")
+    return cache.DATA_DIR / "grid" / f"{code}_grid.json"
+
+
+def save_result(result: dict) -> Path:
+    path = result_path(result.get("code") if isinstance(result, dict) else None)
+    path.parent.mkdir(parents=True, exist_ok=True)
+    tmp = path.with_suffix(".json.tmp")
+    tmp.write_text(json.dumps(result, ensure_ascii=False, indent=2), encoding="utf-8")
+    tmp.replace(path)
+    return path
+
+
+def load_result(code: str):
+    path = result_path(code)
+    if not path.is_file():
+        return None
+    try:
+        return json.loads(path.read_text(encoding="utf-8"))
+    except (OSError, ValueError):
+        return None
 
 
 def simulate(code: str, start_date: str, base_shares: int, grid_shares: int,

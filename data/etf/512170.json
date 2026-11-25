@@ -15,8 +15,8 @@
     "source": "eastmoney"
   },
   "data": {
-    "query_begin_time": "2024-01-01",
-    "query_end_time": "2025-11-30",
+    "query_begin_time": "2026-05-01",
+    "query_end_time": "2026-11-24",
     "kline_records": [
       {
         "date": "2024-01-02",
@@ -9135,5 +9135,15 @@
       "换手率"
     ],
     "source": "eastmoney"
+  },
+  "grid_settings": {
+    "code": "512170",
+    "start": "2026-11-24",
+    "base_shares": 75500,
+    "grid_shares": 15100,
+    "up_pct": 2.02,
+    "down_pct": 2.02,
+    "fee": 5.0,
+    "base_price": 0.331
   }
 }
